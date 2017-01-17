@@ -5,7 +5,9 @@
     "branch": "gh-pages"
   },
   "site": {
-    "title": "The language of flowers and silent things",
+    "title": "New Slang",
+    "description": "",
+    "logo": "/images/logo.jpg",
     "cover": "/images/cover/winterwonderland.jpg"
   },
   "socialnetwork": {},
