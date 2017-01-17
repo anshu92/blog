@@ -1,0 +1,22 @@
+= First Post
+:hp-image: /covers/nervoussystem.jpg
+:hp-tags: Introduction, Personal
+
+image::christmasprofile.JPG[Christmas Profile,400,300]  
+
+Hi, welcome! I am a 24 year old guy living in Toronto. I am interested in a lot of things like technology, the interconnectedness of things, the human brain, music, books and esoteric adventures.
+
+I wished to chronicle my growth as a person as well as leave a record for psychologists to examine in case...well, just in case. I also feel obligated to put my glorious adjustment to anti epilpetic drugs over the past year as a reason for this journaling activity. (Been taking an epileptic drug called Tegretol since I was 10 -> Slowed my brain down for a few years coincinding with my years in university -> Now I m back and with a rejuvinated spirit for learning and fighting the power, which is still my brain lol)
+
+That's a good segue to tell everyone about my current employment situtation. I spent the last 6 months working for a startup that builds tools for epileptics. I was developing seizure detection algorithms for them, but for various reasons I quit a couple of weeks ago. I still think they ll be a successful company because their mission is pretty complimentary to the needs of 1 in 26 people in this world (Check them out : http://www.neutun.com/). I worked on their seizure detection algorithms and testing. Here's what i did : https://www.youtube.com/watch?v=Es_uIpyG4FE . Anyway, I have been interviewing to join a few cool projects in machine learning, which is a field that has caught me right in it's gaze of unfiltered possibilities. I had an interview with Qualcomm last Friday which went pretty alright and I m hopeful.
+
+So yes, that's where I am - partially glad to be spending this Canadian winter in the comforts of my room and working on personal projects including a rigorous quest to achieve physical optimization.
+
+I have a few blog posts coming up - a book review and about the Gross National Happiness idea in Bhutan. So I hope wanderers and friends will come back and read my thoughts on those.
+
+Soon.
+
+Anshuman +
+Toronto +
+17 Jan 2017
+
