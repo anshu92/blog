@@ -1,5 +1,5 @@
 = First Post
-:hp-image: covers/winterwonderland.jpg
+:hp-image: images/covers/winterwonderland.jpg
 :hp-tags: Introduction, Personal
 
 image::christmasprofile.JPG[Christmas Profile,400,300]  
