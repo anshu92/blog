@@ -1,5 +1,5 @@
 = First Post
-:hp-image: https://github.com/anshu92/blog/blob/gh-pages/images/covers/winterwonderland.jpg
+:hp-image: /covers/winterwonderland.jpg
 :hp-tags: Introduction, Personal
 
 image::christmasprofile.JPG[Christmas Profile,400,300]  
