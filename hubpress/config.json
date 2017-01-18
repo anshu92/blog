@@ -8,7 +8,8 @@
     "title": "New Slang",
     "description": "blog by anshuman sahoo",
     "logo": "/images/logo.jpg",
-    "cover": "/images/cover/collage.jpg"
+    "cover": "/images/cover/collage.jpg",
+    "googleAnalytics": "UA-90558314-1"
   },
   "socialnetwork": {},
   "theme": {
