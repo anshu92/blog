@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[New Slang]]></title><description><![CDATA[blog by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/collage.jpg</url><title>New Slang</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Sun, 22 Jan 2017 06:51:50 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Customer Segments]]></title><description><![CDATA[<div class="paragraph">
-<p>'&lt;html&gt;'
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[New Slang]]></title><description><![CDATA[blog by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/collage.jpg</url><title>New Slang</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Sun, 22 Jan 2017 06:54:21 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Customer Segments]]></title><description><![CDATA[<div class="paragraph">
+<p>&lt;html&gt;
   &lt;head&gt;
     &lt;script src="jquery.js"&gt;&lt;/script&gt;
     &lt;script&gt;
@@ -14,7 +14,12 @@
 <pre>  &lt;body&gt;
      &lt;div id="includedContent"&gt;&lt;/div&gt;
   &lt;/body&gt;
-'&lt;/html&gt;'</pre>
+&lt;/html&gt;</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code></code></pre>
 </div>
 </div>]]></description><link>https://anshu92.github.io/blog/2017/01/22/Customer-Segments.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2017/01/22/Customer-Segments.html</guid><category><![CDATA[Machine Learning]]></category><category><![CDATA[ Unsupervised Learning]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Sun, 22 Jan 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[First Post]]></title><description><![CDATA[<div class="imageblock">
 <div class="content">
