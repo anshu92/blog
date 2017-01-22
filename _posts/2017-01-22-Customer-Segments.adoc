@@ -1,8 +1,9 @@
 = Customer Segments
 :hp-image: /images/cover/winterwonderland.jpg
 :hp-tags: Machine Learning, Unsupervised Learning
-
-'<html>' 
+```html
+<!DOCTYPE html>
+<html> 
   <head> 
     <script src="jquery.js"></script> 
     <script> 
@@ -15,4 +16,5 @@
   <body> 
      <div id="includedContent"></div>
   </body> 
-'</html>'
+</html>
+```
