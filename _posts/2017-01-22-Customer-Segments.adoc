@@ -1,0 +1,18 @@
+= Customer Segments
+:hp-image: /images/cover/winterwonderland.jpg
+:hp-tags: Machine Learning, Unsupervised Learning
+
+<html> 
+  <head> 
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("http://rawgit.com/anshu92/MLND-p3-customer-segments/master/customer_segments.html"); 
+    });
+    </script> 
+  </head> 
+
+  <body> 
+     <div id="includedContent"></div>
+  </body> 
+</html>
