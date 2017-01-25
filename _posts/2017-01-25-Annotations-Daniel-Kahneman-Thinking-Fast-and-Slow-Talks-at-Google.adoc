@@ -1,0 +1,44 @@
+= Annotations:Daniel Kahneman: "Thinking, Fast and Slow" | Talks at Google
+:hp-image: /images/cover/winterwonderland.jpg
+:hp-tags: Psychology, Brain, Thinking
+
+* Intuition - favorable view vs skeptical. Important question in medicine evidence based ve intuitive application of medicine.
+
+* Two ways of thinking - 
+
+    * passive - {perception, feelings, intuition} we are not authors of passive thinking. 
+
+    * Active - {doing math, procedural}..pupils dilate by 50% when we concentrate. Effortful..limited capacity to exert effort.
+
+* A bat and a ball together cost 1.10. Bat costs 1 more than ball. How much does ball cost? Most people see the question and answer 10 cents. The correct answer is 5 cents. Most people dont check their math and trust intuition.
+
+* Does not like ‘magic of intuition’ propagated by Malcolm Gladwell’s Blink. Intuition = Recognition
+
+* Is the world regular enough to develop recogntion? Chess players world is regular. Contant feedback allows us to learn rules..ex. Know a friends mood from the way he speaks.
+
+* [https://en.wikipedia.org/wiki/Homunculus](https://en.wikipedia.org/wiki/Homunculus)
+
+* [https://www.amazon.ca/Moonwalking-Einstein-Science-Remembering-Everything/dp/0143120530/ref=sr_1_1?ie=UTF8&qid=1485375427&sr=8-1&keywords=moonwalking+with+einstein](https://www.amazon.ca/Moonwalking-Einstein-Science-Remembering-Everything/dp/0143120530/ref=sr_1_1?ie=UTF8&qid=1485375427&sr=8-1&keywords=moonwalking+with+einstein)
+
+* Memory is bad at lists, really good at remembering routes through spaces. People are good tthinking about agents..agents have traits and behaviors..we form global impressions of personalities. We are bad at understanding sentences with abstract subjects. This is why he uses systems to explain how we think even though its disapproved by psychologists. Ref: homonculus
+
+* Circular reinforcing systems - Sticking a pencil in your mouth to make a smile makes cartoons appear funnier.Associations done in system 1/associative memory.
+
+* Associative memory works on new stimuli by making everything coherent.
+
+In this psychology experiemnt mind reads first as B and second as 13 even though both are identical. We get coherent interpretation while the ambiguity is supressed.
+
+* When an upper class british voice says I have a large tattoo on my back or a man says I m pregnant, we characteristically register surprise. The system 1 classifies world knowledge at top speeds as normal or abnormal. Brain is trained to think along causal lines.
+
+* When instructed to perform an operation, we often perform extra operations..we compute more than need to..allowing substitutions to take place
+
+* ![image alt text](image_0.png)
+
+* Which of the three figures is larger on the screen? Ans: they are equal. But we see right one as bigger..because we automatically compute 3D version of the pic. Another example is the dating heurestic. Ask first how happy u are and then how many dates you ve had? When order is reversed of asking..ppl associate dates with happiness by 0.66
+
+* Based on the fact that a girl is able to read at age 4, ppl are asked what her GPA is? Most ppl get impression of precocity from her reading ability, match that to a relative percentile of able readers at age 4..ad the mind automatically matches that percentile to a GPA of 4, which is statistically absurd. This is oe of the mechanisms that leads to intuitive errors...this kind of mechanism of substitution.
+
+* Subjective confidence - propobability of being correct is a feeling we have..it is actually assessing the fluency of its own processing; assesing the coherence of its own story it has created. This is disastrous because you can concoct stories out of little informatio or unreliable info that seems coherent. People can be confident for very little reason.
+
+Kahneman’s book : https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow
+Link to talk : https://www.youtube.com/watch?v=CjVQJdIrDJ0
