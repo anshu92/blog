@@ -6,9 +6,9 @@
 
 * Two ways of thinking - 
 
-    ** passive - {perception, feelings, intuition} we are not authors of passive thinking. 
+    - passive - {perception, feelings, intuition} we are not authors of passive thinking. 
 
-    ** Active - {doing math, procedural}..pupils dilate by 50% when we concentrate. Effortful..limited capacity to exert effort.
+    - Active - {doing math, procedural}..pupils dilate by 50% when we concentrate. Effortful..limited capacity to exert effort.
 
 * A bat and a ball together cost 1.10. Bat costs 1 more than ball. How much does ball cost? Most people see the question and answer 10 cents. The correct answer is 5 cents. Most people dont check their math and trust intuition.
 
