@@ -1,16 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[New Slang]]></title><description><![CDATA[blog by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/collage.jpg</url><title>New Slang</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 25 Jan 2017 21:17:16 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Annotations:Daniel Kahneman: "Thinking, Fast and Slow" | Talks at Google]]></title><description><![CDATA[<div class="ulist">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[New Slang]]></title><description><![CDATA[blog by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/collage.jpg</url><title>New Slang</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 25 Jan 2017 21:22:09 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Annotations:Daniel Kahneman: "Thinking, Fast and Slow" | Talks at Google]]></title><description><![CDATA[<div class="ulist">
 <ul>
 <li>
 <p>Intuition - favorable view vs skeptical. Important question in medicine evidence based ve intuitive application of medicine.</p>
 </li>
 <li>
 <p>Two ways of thinking -</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>passive - {perception, feelings, intuition} we are not authors of passive thinking.</p>
 </li>
 <li>
 <p>Active - {doing math, procedural}..pupils dilate by 50% when we concentrate. Effortful..limited capacity to exert effort.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>A bat and a ball together cost 1.10. Bat costs 1 more than ball. How much does ball cost? Most people see the question and answer 10 cents. The correct answer is 5 cents. Most people dont check their math and trust intuition.</p>
@@ -58,7 +62,7 @@
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="https://anshu92.github.io/blog/images/kahneman_0.PNG" alt="Psych test" width="400" height="300">
+<img src="https://anshu92.github.io/blog/images/kahneman_0.png" alt="Psych test" width="400" height="300">
 </div>
 </div>
 <div class="ulist">
