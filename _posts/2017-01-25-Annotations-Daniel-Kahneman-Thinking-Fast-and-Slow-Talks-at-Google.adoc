@@ -6,9 +6,9 @@
 
 * Two ways of thinking - 
 
-    * passive - {perception, feelings, intuition} we are not authors of passive thinking. 
+    ** passive - {perception, feelings, intuition} we are not authors of passive thinking. 
 
-    * Active - {doing math, procedural}..pupils dilate by 50% when we concentrate. Effortful..limited capacity to exert effort.
+    ** Active - {doing math, procedural}..pupils dilate by 50% when we concentrate. Effortful..limited capacity to exert effort.
 
 * A bat and a ball together cost 1.10. Bat costs 1 more than ball. How much does ball cost? Most people see the question and answer 10 cents. The correct answer is 5 cents. Most people dont check their math and trust intuition.
 
@@ -34,7 +34,7 @@ In this psychology experiemnt mind reads first as B and second as 13 even though
 
 * When instructed to perform an operation, we often perform extra operations..we compute more than need to..allowing substitutions to take place
 
-image::kahneman_0.PNG[Psych test,400,300]  
+image::kahneman_0.png[Psych test,400,300]  
 
 * Which of the three figures is larger on the screen? Ans: they are equal. But we see right one as bigger..because we automatically compute 3D version of the pic. Another example is the dating heurestic. Ask first how happy u are and then how many dates you ve had? When order is reversed of asking..ppl associate dates with happiness by 0.66
 
