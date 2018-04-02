@@ -8,10 +8,13 @@
     "title": "Flowers for Anshuman",
     "description": "blog by anshuman sahoo",
     "logo": "/images/logo.jpg",
-    "cover": "/images/cover/collage.jpg",
+    "cover": "/images/cover/coll.jpg",
     "googleAnalytics": "UA-90558314-1"
   },
-  "socialnetwork": {},
+  "socialnetwork": {
+    "linkedin": "https://ca.linkedin.com/in/anshuman-sahoo-60386b59",
+    "github": "https://github.com/anshu92"
+  },
   "theme": {
     "name": "casper"
   }
