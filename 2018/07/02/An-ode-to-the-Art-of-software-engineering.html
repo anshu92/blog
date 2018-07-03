@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>An ode to the Art of software engineering - hallucinations</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="An ode to the Art of software engineering">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="An ode to the Art of software engineering">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="//anshu92.github.io/blog/themes/uno/assets/css/uno.css?v=1530578226396" />
+
+    <link rel="canonical" href="https://anshu92.github.io/blog/2018/07/02/An-ode-to-the-Art-of-software-engineering.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="hallucinations" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="An ode to the Art of software engineering" />
+    <meta property="og:description" content="Coming from a background that sees software as a tool for ‘higher’ purposes - for example, signal processing, hardware engineering and machine learning, the past few months working on various software projects have revealed the amount of thought and design that needs to go into the tooling so that the" />
+    <meta property="og:url" content="https://anshu92.github.io/blog/2018/07/02/An-ode-to-the-Art-of-software-engineering.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="An ode to the Art of software engineering" />
+    <meta name="twitter:description" content="Coming from a background that sees software as a tool for ‘higher’ purposes - for example, signal processing, hardware engineering and machine learning, the past few months working on various software projects have revealed the amount of thought and design that needs to go into the tooling so that the" />
+    <meta name="twitter:url" content="https://anshu92.github.io/blog/2018/07/02/An-ode-to-the-Art-of-software-engineering.html" />
+    
+    <script type="application/ld+json">
+null
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="hallucinations" href="https://anshu92.github.io/blog/rss/" />
+
+</head>
+<body class="post-template no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " style="background-image: url(/images/cover/coll.jpg)">
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="https://anshu92.github.io/blog" title="link to homepage for hallucinations"><img src="/images/logo.jpg" width="80" alt="hallucinations logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="https://anshu92.github.io/blog" title="link to homepage for hallucinations">hallucinations</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">by anshuman sahoo</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="https://anshu92.github.io/blog/#blog" title="link to hallucinations blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="https://github.com/anshu92" title="Github account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+                  <!-- LinkedIn -->
+                  <li class="navigation__item">
+                    <a href="https://ca.linkedin.com/in/anshuman-sahoo-60386b59" title="LinkedIn account">
+                      <i class='icon icon-social-linkedin'></i>
+                      <span class="label">LinkedIn</span>
+                    </a>
+                  </li>
+              
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="02 Jul 2018" class="post-meta__date date">02 Jul 2018</time> &#8226; <span class="post-meta__tags tags"></span>
+        <span class="post-meta__author author"><img src="https://avatars0.githubusercontent.com/u/3633052?v&#x3D;4" alt="profile image for Anshuman Sahoo" class="avatar post-meta__avatar" /> by Anshuman Sahoo</span>
+      </div>
+      <h1 class="post-title">An ode to the Art of software engineering</h1>
+    </header>
+
+    <section class="post">
+      <div class="paragraph">
+<p>Coming from a background that sees software as a tool for ‘higher’ purposes - for example, signal processing, hardware engineering and machine learning, the past few months working on various software projects have revealed the amount of thought and design that needs to go into the tooling so that the ‘higher’ goals can be seamlessly expressed and swooned on. Having to deal with inefficiencies and issues with projects has often felt like patching a machine gunned pot of water. And no amount of technical hijinks and quantum mechanics has been able to solve the problems - which has led me to believe that perhaps the technical hammer of Thor is not the only superpower I need.</p>
+</div>
+<div class="paragraph">
+<p>And so I reluctantly picked up ‘Code Complete’ and tried to elevate my skills from ‘Coder’ to ‘Software Engineer’. After a few pages, I had highlighted almost every line. This is because every salient point seemed to alleviate a pain point I had encountered in the last few months. I felt like a physicist who didn’t know Newtonian physics swinging pendulums in random ways.</p>
+</div>
+<div class="paragraph">
+<p>Over the next few months, I hope to blog more on the lessons I learn as I try to become better at this job as well as about my interests. For now, I wanted to share my incredulity at the aliquot perspective I had about my own work.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>“There is a pleasure in the pathless woods,</p>
+</div>
+<div class="paragraph">
+<p>There is a rapture on the lonely shore,</p>
+</div>
+<div class="paragraph">
+<p>There is society, where none intrudes,</p>
+</div>
+<div class="paragraph">
+<p>By the deep Sea, and music in its roar:</p>
+</div>
+<div class="paragraph">
+<p>I love not Man the less, but Nature more,</p>
+</div>
+<div class="paragraph">
+<p>From these our interviews, in which I steal</p>
+</div>
+<div class="paragraph">
+<p>From all I may be, or have been before,</p>
+</div>
+<div class="paragraph">
+<p>To mingle with the Universe, and feel</p>
+</div>
+<div class="paragraph">
+<p>What I can ne’er express, yet cannot all conceal.”</p>
+</div>
+<div class="paragraph">
+<p>Lord Byron</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#8201;&#8212;&#8201;Anshu</p>
+</div>
+    </section>
+
+  </article>
+
+
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2018. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="http://hubpress.io" title="link to Hubpress website">Hubpress</a></span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+
+    <script type="text/javascript" src="//anshu92.github.io/blog/themes/uno/assets/js/main.js?v=1530578226396"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90558314-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
