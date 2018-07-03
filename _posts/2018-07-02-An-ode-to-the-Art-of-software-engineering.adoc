@@ -1,5 +1,5 @@
 = An ode to the Art of software engineering
-
+:hp-tags: Software Engineering, Insight, Personal
 
 Coming from a background that sees software as a tool for ‘higher’ purposes - for example, signal processing, hardware engineering and machine learning, the past few months working on various software projects have revealed the amount of thought and design that needs to go into the tooling so that the ‘higher’ goals can be seamlessly expressed and swooned on. Having to deal with inefficiencies and issues with projects has often felt like patching a machine gunned pot of water. And no amount of technical hijinks and quantum mechanics has been able to solve the problems - which has led me to believe that perhaps the technical hammer of Thor is not the only superpower I need.
 
