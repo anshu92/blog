@@ -1,28 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Flowers for Anshuman]]></title><description><![CDATA[blog by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/collage.jpg</url><title>Flowers for Anshuman</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 02 Apr 2018 02:29:43 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[First Post]]></title><description><![CDATA[<div class="imageblock">
-<div class="content">
-<img src="https://anshu92.github.io/blog/images/christmasprofile.JPG" alt="Christmas Profile" width="400" height="300">
-</div>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/coll.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 03 Jul 2018 00:37:06 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[An ode to the Art of software engineering]]></title><description><![CDATA[<div class="paragraph">
+<p>Coming from a background that sees software as a tool for ‘higher’ purposes - for example, signal processing, hardware engineering and machine learning, the past few months working on various software projects have revealed the amount of thought and design that needs to go into the tooling so that the ‘higher’ goals can be seamlessly expressed and swooned on. Having to deal with inefficiencies and issues with projects has often felt like patching a machine gunned pot of water. And no amount of technical hijinks and quantum mechanics has been able to solve the problems - which has led me to believe that perhaps the technical hammer of Thor is not the only superpower I need.</p>
 </div>
 <div class="paragraph">
-<p>Hi, welcome! I am a 24 year old guy living in Toronto. I am interested in a lot of things like technology, the interconnectedness of things, the human brain, music, books and esoteric adventures.</p>
+<p>And so I reluctantly picked up ‘Code Complete’ and tried to elevate my skills from ‘Coder’ to ‘Software Engineer’. After a few pages, I had highlighted almost every line. This is because every salient point seemed to alleviate a pain point I had encountered in the last few months. I felt like a physicist who didn’t know Newtonian physics swinging pendulums in random ways.</p>
 </div>
 <div class="paragraph">
-<p>I wished to chronicle my growth as a person as well as leave a record for psychologists to examine in case&#8230;&#8203;well, just in case. I also feel obligated to put my glorious adjustment to anti epilpetic drugs over the past year as a reason for this journaling activity. (Been taking an epileptic drug called Tegretol since I was 10 &#8594; Slowed my brain down for a few years coincinding with my years in university &#8594; Now I m back and with a rejuvinated spirit for learning and fighting the power, which is still my brain lol)</p>
+<p>Over the next few months, I hope to blog more on the lessons I learn as I try to become better at this job as well as about my interests. For now, I wanted to share my incredulity at the aliquot perspective I had about my own work.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>“There is a pleasure in the pathless woods,</p>
 </div>
 <div class="paragraph">
-<p>That&#8217;s a good segue to tell everyone about my current employment situtation. I spent the last 6 months working for a startup that builds tools for epileptics. I was developing seizure detection algorithms for them, but for various reasons I quit a couple of weeks ago. I still think they ll be a successful company because their mission is pretty complimentary to the needs of 1 in 26 people in this world (Check them out : <a href="http://www.neutun.com/" class="bare">http://www.neutun.com/</a>). I worked on their seizure detection algorithms and testing. Here&#8217;s what i did : <a href="https://www.youtube.com/watch?v=Es_uIpyG4FE" class="bare">https://www.youtube.com/watch?v=Es_uIpyG4FE</a> . Anyway, I have been interviewing to join a few cool projects in machine learning, which is a field that has caught me right in its gaze of unfiltered possibilities. I had an interview with Qualcomm last Friday which went pretty alright and I&#8217;m hopeful.</p>
+<p>There is a rapture on the lonely shore,</p>
 </div>
 <div class="paragraph">
-<p>So yes, that&#8217;s where I am - partially glad to be spending this Canadian winter in the comforts of my room and working on personal projects including a rigorous quest to achieve physical optimization.</p>
+<p>There is society, where none intrudes,</p>
 </div>
 <div class="paragraph">
-<p>I have a few blog posts coming up - a book review and about the Gross National Happiness idea in Bhutan. So I hope wanderers and friends will come back and read my thoughts on those.</p>
+<p>By the deep Sea, and music in its roar:</p>
 </div>
 <div class="paragraph">
-<p>Soon.</p>
+<p>I love not Man the less, but Nature more,</p>
 </div>
 <div class="paragraph">
-<p>Anshuman<br>
-Toronto<br>
-17 Jan 2017</p>
-</div>]]></description><link>https://anshu92.github.io/blog/2017/01/17/First-Post.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2017/01/17/First-Post.html</guid><category><![CDATA[Introduction]]></category><category><![CDATA[ Personal]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Tue, 17 Jan 2017 00:00:00 GMT</pubDate></item></channel></rss>
+<p>From these our interviews, in which I steal</p>
+</div>
+<div class="paragraph">
+<p>From all I may be, or have been before,</p>
+</div>
+<div class="paragraph">
+<p>To mingle with the Universe, and feel</p>
+</div>
+<div class="paragraph">
+<p>What I can ne’er express, yet cannot all conceal.”</p>
+</div>
+<div class="paragraph">
+<p>Lord Byron</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&#8201;&#8212;&#8201;Anshu</p>
+</div>]]></description><link>https://anshu92.github.io/blog/2018/07/02/An-ode-to-the-Art-of-software-engineering.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2018/07/02/An-ode-to-the-Art-of-software-engineering.html</guid><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Mon, 02 Jul 2018 00:00:00 GMT</pubDate></item></channel></rss>
