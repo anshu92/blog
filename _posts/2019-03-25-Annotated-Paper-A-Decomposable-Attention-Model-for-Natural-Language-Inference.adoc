@@ -3,6 +3,8 @@
 
 image::coattention1.png[coattention1]
 
-I came across this paper while looking for ways to apply learned attention maps to this [gendered coreference problem](http://www.kaggle.com/c/gendered-pronoun-resolution/leaderboard) and decided to implement my own version of the ideas described in this paper.
+I came across this paper while looking for ways to apply learned attention maps to this [Gendered Coreference Problem](https://www.kaggle.com/c/gendered-pronoun-resolution/leaderboard) and decided to implement my own version of the ideas described in this paper.
 
 image::coattention2.png[coattention2]
+
+Transformers(https://arxiv.org/abs/1706.03762) have become synonymous with state of the art when it comes to natural language processing. Not only that, it has also provided conceptual intuition about learned representations of sequences that pushes beyond recurrence as the modus operandi of sequence learning.
