@@ -1,3 +1,8 @@
-# Annotated Paper: [A Decomposable Attention Model for Natural Language Inference](https://aclweb.org/anthology/D16-1244)
+# Annotated Paper: A Decomposable Attention Model for Natural Language Inference
+## <https://aclweb.org/anthology/D16-1244>
 
 image::coattention1.png[coattention1]
+
+I came across this paper while looking for ways to apply learned attention maps to this [gendered coreference problem](https://www.kaggle.com/c/gendered-pronoun-resolution/leaderboard) and decided to implement my own version of the ideas described in this paper.
+
+image::coattention2.png[coattention2]
