@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/coll.png</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 26 Mar 2019 02:37:42 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Annotated Paper: A Decomposable Attention Model for Natural Language Inference]]></title><description><![CDATA[<div class="imageblock">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/coll.png</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 26 Mar 2019 02:52:59 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Annotated Paper: A Decomposable Attention Model for Natural Language Inference]]></title><description><![CDATA[<div class="imageblock">
 <div class="content">
 <img src="https://anshu92.github.io/blog/images/coattention1.png" alt="coattention1">
 </div>
 </div>
 <div class="paragraph">
-<p>I came across this paper while looking for ways to apply learned attention maps to this [gendered coreference problem](<a href="http://www.kaggle.com/c/gendered-pronoun-resolution/leaderboard" class="bare">http://www.kaggle.com/c/gendered-pronoun-resolution/leaderboard</a>) and decided to implement my own version of the ideas described in this paper.</p>
+<p>I came across this paper while looking for ways to apply learned attention maps to this [Gendered Coreference Problem](<a href="https://www.kaggle.com/c/gendered-pronoun-resolution/leaderboard" class="bare">https://www.kaggle.com/c/gendered-pronoun-resolution/leaderboard</a>) and decided to implement my own version of the ideas described in this paper.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="https://anshu92.github.io/blog/images/coattention2.png" alt="coattention2">
 </div>
+</div>
+<div class="paragraph">
+<p>Transformers(<a href="https://arxiv.org/abs/1706.03762" class="bare">https://arxiv.org/abs/1706.03762</a>) have become synonymous with state of the art when it comes to natural language processing. Not only that, it has also provided conceptual intuition about learned representations of sequences that pushes beyond recurrence as the modus operandi of sequence learning.</p>
 </div>]]></description><link>https://anshu92.github.io/blog/2019/03/25/Annotated-Paper-A-Decomposable-Attention-Model-for-Natural-Language-Inference.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/03/25/Annotated-Paper-A-Decomposable-Attention-Model-for-Natural-Language-Inference.html</guid><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Mon, 25 Mar 2019 00:00:00 GMT</pubDate></item></channel></rss>
