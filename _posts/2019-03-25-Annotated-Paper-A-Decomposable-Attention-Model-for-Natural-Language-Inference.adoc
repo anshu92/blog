@@ -1,3 +1,2 @@
 # Annotated Paper: A Decomposable Attention Model for Natural Language Inference
 
-test
