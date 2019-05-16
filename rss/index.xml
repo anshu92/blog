@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/coll.png</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 16 May 2019 21:31:52 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[2: ArcFace and other Geodesic Distance Loss Functions]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/coll.png</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 16 May 2019 21:32:54 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[2: ArcFace and other Geodesic Distance Loss Functions]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Paper:</em> ArcFace: Additive Angular Margin Loss for Deep Face Recognition <a href="https://arxiv.org/pdf/1801.07698.pdf" class="bare">https://arxiv.org/pdf/1801.07698.pdf</a></p>
@@ -8,8 +8,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_intra_class_compactness_and_inter_class_separability">Intra-class compactness and Inter-class separability</h4>
+<div class="sect2">
+<h3 id="_intra_class_compactness_and_inter_class_separability">Intra-class compactness and Inter-class separability</h3>
 <div class="paragraph">
 <p>In the design of loss functions that solve the challenges laid out above, two outcomes are desirable - one is that learnt features and weights of a particular class should lie close together in the vector space we are optimizing in (for Softmax, this is the Eucledian space). Center loss (which was the state of the art in facial recognition task before ArcFace) penalizes the distance between deep features and their corresponding class centres in the Euclidean space and hence attempts to achieve <strong>intra-class compactness</strong>. Another important loss function, SphereFace introduced the idea that the transformation matrix in the final fully connected layer can be used to represent class centers in angular space and penalize angles between deep features and weights in a multiplicative way. Both these losses helped improve the intra-class compactness but did not improve the inter-class separability. Eventually, this led to a popular line of research to incorporate margins in well-established loss functions in order to maximize inter-class separability.</p>
 </div>
