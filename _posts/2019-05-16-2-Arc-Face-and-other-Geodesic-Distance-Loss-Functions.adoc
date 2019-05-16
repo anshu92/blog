@@ -41,5 +41,10 @@ image::https://cdn-images-1.medium.com/max/1600/1*lyJ1a8cd5mjnYmgj9tMV9g.png[L2]
 
 The additive angular margin is then added to the angle between feature and weight to get - 
 
-image::https://cdn-images-1.medium.com/max/1600/1*EYmWyoO6At1HKgBKCFcT-w.png[L3]
+image::https://github.com/anshu92/blog/raw/gh-pages/images/L3.png[L3]
 
+The paper also mentions combining SphereFace, CosFace and ArcFace into a unified metric - 
+
+image::https://github.com/anshu92/blog/raw/gh-pages/images/CM1.png[CM1]
+
+I have used this loss in my projects and it works really well in discriminating between subtly different classes.
