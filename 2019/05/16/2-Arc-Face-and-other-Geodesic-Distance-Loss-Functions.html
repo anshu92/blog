@@ -25,7 +25,7 @@
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
-    <link rel="stylesheet" type="text/css" href="//anshu92.github.io/blog/themes/uno/assets/css/uno.css?v=1558042176458" />
+    <link rel="stylesheet" type="text/css" href="//anshu92.github.io/blog/themes/uno/assets/css/uno.css?v=1558042312937" />
 
     <link rel="canonical" href="https://anshu92.github.io/blog/2019/05/16/2-Arc-Face-and-other-Geodesic-Distance-Loss-Functions.html" />
     <meta name="referrer" content="origin" />
@@ -157,16 +157,13 @@ null
 <p>In the design of loss functions that solve the challenges laid out above, two outcomes are desirable - one is that learnt features and weights of a particular class should lie close together in the vector space we are optimizing in (for Softmax, this is the Eucledian space). Center loss (which was the state of the art in facial recognition task before ArcFace) penalizes the distance between deep features and their corresponding class centres in the Euclidean space and hence attempts to achieve <strong>intra-class compactness</strong>. Another important loss function, SphereFace introduced the idea that the transformation matrix in the final fully connected layer can be used to represent class centers in angular space and penalize angles between deep features and weights in a multiplicative way. Both these losses helped improve the intra-class compactness but did not improve the inter-class separability. Eventually, this led to a popular line of research to incorporate margins in well-established loss functions in order to maximize inter-class separability.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_geodesic_distance_optimization">Geodesic Distance Optimization</h4>
+<div class="sect2">
+<h3 id="_geodesic_distance_optimization">Geodesic Distance Optimization</h3>
 <div class="paragraph">
 <p>Geodesic distance between two points is the shortest distance between them on the a multi-dimensional surface (on a sphere, it is the arc between two points that forms part of the circle containing those points). There are 4 kinds of constraints we consider for this - Margin loss (insert a distance margin between samples and centers), Intra loss (decrease distance between sample and corresponding center), Inter loss (increase the distance between centers) and Triplet loss(insert margin between triplet samples &lt;<a href="https://en.wikipedia.org/wiki/Triplet_loss&gt;" class="bare">https://en.wikipedia.org/wiki/Triplet_loss&gt;</a>). Experiments have shown that Margin loss is the most effective strategy. By normalizing vectors so that the geodesic distance between them is the arc length on some n-dim sphere, we can reduce the problem to optimizing the angle between the vectors. In essence, this is what ArcFace aims at achieving.</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_comparison_of_arcface_to_comparable_loss_functions">Comparison of ArcFace to comparable loss functions</h4>
 <table class="tableblock frame-all grid-all" style="width: 80%;">
-<caption class="title">Table 1. Comparison of loss functions</caption>
+<caption class="title">Table 1. Comparison of ArcFace to comparable loss functions</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -241,8 +238,8 @@ null
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="_quick_derivation_from_softmax">Quick Derivation from Softmax</h4>
+<div class="sect2">
+<h3 id="_quick_derivation_from_softmax">Quick Derivation from Softmax</h3>
 <div class="imageblock">
 <div class="content">
 <img src="https://cdn-images-1.medium.com/max/1600/1*lC5r61pId49Za7o0A1uvng.png" alt="Softmax">
@@ -312,7 +309,7 @@ null
         hljs.initHighlightingOnLoad();
       </script>
 
-    <script type="text/javascript" src="//anshu92.github.io/blog/themes/uno/assets/js/main.js?v=1558042176458"></script>
+    <script type="text/javascript" src="//anshu92.github.io/blog/themes/uno/assets/js/main.js?v=1558042312937"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
