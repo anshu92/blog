@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/coll.png</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 16 May 2019 21:29:36 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[2: ArcFace and other Geodesic Distance Loss Functions]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/coll.png</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 16 May 2019 21:31:52 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[2: ArcFace and other Geodesic Distance Loss Functions]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Paper:</em> ArcFace: Additive Angular Margin Loss for Deep Face Recognition <a href="https://arxiv.org/pdf/1801.07698.pdf" class="bare">https://arxiv.org/pdf/1801.07698.pdf</a></p>
@@ -14,16 +14,13 @@
 <p>In the design of loss functions that solve the challenges laid out above, two outcomes are desirable - one is that learnt features and weights of a particular class should lie close together in the vector space we are optimizing in (for Softmax, this is the Eucledian space). Center loss (which was the state of the art in facial recognition task before ArcFace) penalizes the distance between deep features and their corresponding class centres in the Euclidean space and hence attempts to achieve <strong>intra-class compactness</strong>. Another important loss function, SphereFace introduced the idea that the transformation matrix in the final fully connected layer can be used to represent class centers in angular space and penalize angles between deep features and weights in a multiplicative way. Both these losses helped improve the intra-class compactness but did not improve the inter-class separability. Eventually, this led to a popular line of research to incorporate margins in well-established loss functions in order to maximize inter-class separability.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_geodesic_distance_optimization">Geodesic Distance Optimization</h4>
+<div class="sect2">
+<h3 id="_geodesic_distance_optimization">Geodesic Distance Optimization</h3>
 <div class="paragraph">
 <p>Geodesic distance between two points is the shortest distance between them on the a multi-dimensional surface (on a sphere, it is the arc between two points that forms part of the circle containing those points). There are 4 kinds of constraints we consider for this - Margin loss (insert a distance margin between samples and centers), Intra loss (decrease distance between sample and corresponding center), Inter loss (increase the distance between centers) and Triplet loss(insert margin between triplet samples &lt;<a href="https://en.wikipedia.org/wiki/Triplet_loss&gt;" class="bare">https://en.wikipedia.org/wiki/Triplet_loss&gt;</a>). Experiments have shown that Margin loss is the most effective strategy. By normalizing vectors so that the geodesic distance between them is the arc length on some n-dim sphere, we can reduce the problem to optimizing the angle between the vectors. In essence, this is what ArcFace aims at achieving.</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_comparison_of_arcface_to_comparable_loss_functions">Comparison of ArcFace to comparable loss functions</h4>
 <table class="tableblock frame-all grid-all" style="width: 80%;">
-<caption class="title">Table 1. Comparison of loss functions</caption>
+<caption class="title">Table 1. Comparison of ArcFace to comparable loss functions</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -98,8 +95,8 @@
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="_quick_derivation_from_softmax">Quick Derivation from Softmax</h4>
+<div class="sect2">
+<h3 id="_quick_derivation_from_softmax">Quick Derivation from Softmax</h3>
 <div class="imageblock">
 <div class="content">
 <img src="https://cdn-images-1.medium.com/max/1600/1*lC5r61pId49Za7o0A1uvng.png" alt="Softmax">
