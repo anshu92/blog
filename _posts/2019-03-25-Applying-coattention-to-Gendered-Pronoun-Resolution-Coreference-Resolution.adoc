@@ -1,8 +1,0 @@
-# Applying coattention to Gendered Pronoun Resolution (Coreference Resolution)
-
-Transformers(https://arxiv.org/abs/1706.03762) have become the state of the art when it comes to natural language processing, and have made an impact especially in language modelling. In addition, they has also provided a nice conceptual intuition about learned representations of sequences that helps us look beyond recurrence as the modus operandi of sequence learning.
-
-While trying to make my mark on the leaderboard of the Gendered Pronoun Resolution competition on Kaggle (https://www.kaggle.com/c/gendered-pronoun-resolution), I was trying to find ways to apply the idea of attention in order to solve the coreference problem. The coreference problem is basically the task of pairing an expression to its referring entity; which in this case is the pronoun (he, she etc.) to its referring proper noun.
-
-
-## <https://aclweb.org/anthology/D16-1244>
