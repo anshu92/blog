@@ -13,5 +13,7 @@ BATS! Nagel chose bats for this analogy because they are close enough to us in t
 #### Facts vs conceptual schemes
 Another area of caution is to accept that there are humanly inaccesible facts, and in our inability to know what we don't know, we create conceptual schemes that 'fit'. Objectivity is simply reducing our dependence on species/situation specific points towards the object of investigation. However, greater objectivity takes us farther from the real nature of the phenomena.
 
+And so, if the quest for AGI is to be a tractable one, we must first construct a better empathy towards alien systems of intelligence and perhaps understand processes we deem unintellectual in the glow of newfound humility.
+
 
 
