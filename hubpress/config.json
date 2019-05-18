@@ -21,5 +21,25 @@
   },
   "theme": {
     "name": "uno"
+  },
+  "urls": {
+    "site": "https://anshu92.github.io/blog",
+    "hubpress": "https://anshu92.github.io/blog",
+    "theme": "//anshu92.github.io/blog/themes/uno",
+    "images": "https://anshu92.github.io/blog/images"
+  },
+  "initialisationConfigComponent": {
+    "name": "initialise-configuration",
+    "computed": {},
+    "methods": {},
+    "staticRenderFns": [
+      null,
+      null,
+      null
+    ],
+    "_compiled": true,
+    "beforeCreate": [
+      null
+    ]
   }
 }
