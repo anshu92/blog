@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/coll.png</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 16 May 2019 21:32:54 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[2: ArcFace and other Geodesic Distance Loss Functions]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/images/cover/coll.png</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 18 May 2019 03:46:21 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[3 - Learning Representations through Causal Invariance]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.technologyreview.com/s/613502/deep-learning-could-reveal-why-the-world-works-the-way-it-does/?fbclid=IwAR2g29PKHoaqKU4P6mWcTwXKiCrm5QOJJ_-wCzzchC1QPpthVkOFLnG5W1w"><em>Summary of talk by Leon Bottou at ICLR 2019</em></a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_key_points">Key points</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Statistical problem is only a proxy to the real problem. Learning algorithms might be able to learn representations from data that satisfy the statistical conditions that occur with the problem, but they miss the point or miss some important correlation amidst other spurious correlations that it learns.</p>
+</li>
+<li>
+<p>Nature doesn&#8217;t shuffle data, we do. Collection of data happens under varying environmental conditions with different experimental settings and biases. Earlier we used to curate data carefully to follow natural distribution. These days, we have large datasets that are randomly shuffled and assumed to be independent and identically distributed. The 'robust approach' involves interpolating different environments we have seen so far in correct proportions. However, interpolation is not enough and we need to be able to extrapolate to environments we have not seen before. In order to do this, we need to learn properties that are stable across environments - we need to learn a representation that can regress to the target while remaining invariant. Following this, we need to find variables that are relevant and ignore learning the spurious variables.</p>
+</li>
+<li>
+<p>Adversarial Domain Adoptation - classifier that is invariant to changing environments.</p>
+</li>
+<li>
+<p>Toy example - they use the idea of colored MNIST, where some numbers are colored in order to prove that machine learning algorithms will learn spurious correlations between color and classifications; which makes sense because of the data - but calls for design of algorithms that are robust to learning such relations.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A lot of interesting realizations about the design of representation learning algorithms follow from this. I had been stewing about ideas of modelling causality for time series problems for some time and it pleased me greatly to see a keynote speech at a major conference highlight this topic. It also highlights the fact that we shouldn&#8217;t lose sight of the reality of the problem we are solving or the physical phenomena or process that we are trying to teach a machine to represent in the purity, beauty and elegance of mathematical constructions that seem to perform and learn quantifiable statistical insights from data.</p>
+</div>
+</div>]]></description><link>https://anshu92.github.io/blog/2019/05/17/3-Learning-Representations-through-Causal-Invariance.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/05/17/3-Learning-Representations-through-Causal-Invariance.html</guid><category><![CDATA[iclr]]></category><category><![CDATA[ summary]]></category><category><![CDATA[ conference]]></category><category><![CDATA[ machine learning]]></category><category><![CDATA[ causality]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Fri, 17 May 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[2: ArcFace and other Geodesic Distance Loss Functions]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Paper:</em> ArcFace: Additive Angular Margin Loss for Deep Face Recognition <a href="https://arxiv.org/pdf/1801.07698.pdf" class="bare">https://arxiv.org/pdf/1801.07698.pdf</a></p>
