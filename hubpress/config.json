@@ -2,7 +2,8 @@
   "meta": {
     "username": "anshu92",
     "repositoryName": "blog",
-    "branch": "gh-pages"
+    "branch": "gh-pages",
+    "cname": "anshu92.github.io/"
   },
   "site": {
     "title": "hallucinations",
