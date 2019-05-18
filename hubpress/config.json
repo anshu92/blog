@@ -11,13 +11,24 @@
     "logo": "/blog/images/profile.jpg",
     "cover": "/blog/images/cover/cover.jpg",
     "postsPerPage": "5",
-    "googleAnalytics": "UA-90558314-1"
+    "googleAnalytics": "UA-90558314-1",
+    "delay": "",
+    "blogPath": "",
+    "disqus": ""
   },
   "socialnetwork": {
     "email": "anshuman264@gmail.com",
     "linkedin": "https://ca.linkedin.com/in/anshuman-sahoo-60386b59",
     "instagram": "",
-    "github": "https://github.com/anshu92"
+    "github": "https://github.com/anshu92",
+    "twitter": "",
+    "facebook": "",
+    "googleplus": "",
+    "pinterest": "",
+    "flickr": "",
+    "stackoverflow": "",
+    "paypalme": "",
+    "opencollective": ""
   },
   "theme": {
     "name": "uno"
@@ -41,5 +52,11 @@
     "beforeCreate": [
       null
     ]
-  }
+  },
+  "navigation": [
+    {
+      "label": "Homepage",
+      "url": "https://anshu92.github.io"
+    }
+  ]
 }
