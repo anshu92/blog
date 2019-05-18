@@ -1,4 +1,4 @@
-= 3 - Learning Representations through Causal Invariance
+= 3: Learning Representations through Causal Invariance
 
 :hp-tags: iclr, summary, conference, machine learning, causality
 
