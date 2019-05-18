@@ -9,6 +9,7 @@
     "description": "by anshuman sahoo",
     "logo": "",
     "cover": "/images/cover/coll.png",
+    "postsPerPage": "10",
     "googleAnalytics": "UA-90558314-1"
   },
   "socialnetwork": {
