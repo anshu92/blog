@@ -7,8 +7,8 @@
   "site": {
     "title": "hallucinations",
     "description": "by anshuman sahoo",
-    "logo": "",
-    "cover": "https://github.com/anshu92/blog/raw/gh-pages/images/cover/winterwonderland.jpg",
+    "logo": "/images/profile.png",
+    "cover": "/images/cover/winterwonderland.jpg",
     "postsPerPage": "10",
     "googleAnalytics": "UA-90558314-1"
   },
