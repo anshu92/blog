@@ -1,0 +1,17 @@
+= 3: Learning Representations through Causal Invariance
+
+:hp-tags: iclr, summary, conference, machine learning, causality
+
+https://www.technologyreview.com/s/613502/deep-learning-could-reveal-why-the-world-works-the-way-it-does/?fbclid=IwAR2g29PKHoaqKU4P6mWcTwXKiCrm5QOJJ_-wCzzchC1QPpthVkOFLnG5W1w[_Summary of talk by Leon Bottou at ICLR 2019_]
+
+### Key points
+* Statistical problem is only a proxy to the real problem. Learning algorithms might be able to learn representations from data that satisfy the statistical conditions that occur with the problem, but they miss the point or miss some important correlation amidst other spurious correlations that it learns.
+* Nature doesn't shuffle data, we do. Collection of data happens under varying environmental conditions with different experimental settings and biases. Earlier we used to curate data carefully to follow natural distribution. These days, we have large datasets that are randomly shuffled and assumed to be independent and identically distributed. The 'robust approach' involves interpolating different environments we have seen so far in correct proportions. However, interpolation is not enough and we need to be able to extrapolate to environments we have not seen before. In order to do this, we need to learn properties that are stable across environments - we need to learn a representation that can regress to the target while remaining invariant. Following this, we need to find variables that are relevant and ignore learning the spurious variables.
+* Adversarial Domain Adoptation - classifier that is invariant to changing environments.
+* Toy example - they use the idea of colored MNIST, where some numbers are colored in order to prove that machine learning algorithms will learn spurious correlations between color and classifications; which makes sense because of the data - but calls for design of algorithms that are robust to learning such relations.
+* Sidenote: https://www.youtube.com/watch?v=JTTiELgMyuM[Karush-Kuhn-Tucker conditions]
+
+
+A lot of interesting realizations about the design of representation learning algorithms follow from this. I had been stewing about ideas of modelling causality for time series problems for some time and it pleased me greatly to see a keynote speech at a major conference highlight this topic. It also highlights the fact that we shouldn't lose sight of the reality of the problem we are solving or the physical phenomena or process that we are trying to teach a machine to represent in the purity, beauty and elegance of mathematical constructions that seem to perform and learn quantifiable statistical insights from data.
+
+
