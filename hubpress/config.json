@@ -8,7 +8,8 @@
     "title": "hallucinations",
     "description": "by anshuman sahoo",
     "logo": "",
-    "cover": "/images/cover/coll.png",
+    "cover": "/images/cover/winterwonderland.jpg",
+    "postsPerPage": "10",
     "googleAnalytics": "UA-90558314-1"
   },
   "socialnetwork": {
