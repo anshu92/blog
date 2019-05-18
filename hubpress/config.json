@@ -7,7 +7,7 @@
   "site": {
     "title": "hallucinations",
     "description": "by anshuman sahoo",
-    "logo": "/images/profile.jpg",
+    "logo": "/blob/images/profile.jpg",
     "cover": "/images/cover/winterwonderland.jpg",
     "postsPerPage": "10",
     "googleAnalytics": "UA-90558314-1"
