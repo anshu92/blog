@@ -25,7 +25,7 @@
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
-    <link rel="stylesheet" type="text/css" href="//anshu92.github.io/blog/themes/uno/assets/css/uno.css?v=1558496686709" />
+    <link rel="stylesheet" type="text/css" href="//anshu92.github.io/blog/themes/uno/assets/css/uno.css?v=1558496780388" />
 
     <link rel="canonical" href="https://anshu92.github.io/blog/2019/05/21/4-Variable-Elimination-Algorithm-in-Probabilistic-Graph-Inference.html" />
     <meta name="referrer" content="origin" />
@@ -188,10 +188,10 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Conditional probability query - we are looking for a subset of all graph variables Y, i.e., we are trying to compute P(Y | E=e)</p>
+<p><strong>Conditional probability query</strong> - we are looking for a subset of all graph variables Y, i.e., we are trying to compute P(Y | E=e)</p>
 </li>
 <li>
-<p>Maximum a posteriori (MAP) query - we are looking for all values of Y, where Y is all variables except the evidence E that maximizes P(Y | E=e) (argmax_y p(y=y | E=e)</p>
+<p><strong>Maximum a posteriori (MAP) query</strong> - we are looking for all values of Y, where Y is all variables except the evidence E that maximizes P(Y | E=e) (argmax_y p(y=y | E=e)</p>
 </li>
 </ol>
 </div>
@@ -199,7 +199,7 @@
 <p>Both these problems are theoretically NP-hard but that is the worst case situation. In general there are many strategies that make inference on PGMs tractable. There are many inference algorithms like Variable elimination, Message passing over a graph, belief propogation, variational approximation, Random sampling instantiations (Markov chain Monte Carlo, importance sampling).</p>
 </div>
 <div class="paragraph">
-<p>Variable Elimination is a form of memoization/dynamic programming algorithm, where we compute factors as we try to eliminate variables along a graph.</p>
+<p>Variable Elimination is a form of <strong>memoization/dynamic programming algorithm</strong>, where we compute factors as we try to eliminate variables along a graph.</p>
 </div>
 <div class="paragraph">
 <p>In it&#8217;s simplest form, we can illustrate its working on a chain of variables (refer to slides provided in the link above). By marginalizing over a series of factors determined by order, which determines the run time of the algorithm, we can progressively eliminate 'local' variables from a factor. Finding the right order of variables is an NP-hard problem.</p>
@@ -246,7 +246,7 @@
         // hljs.initHighlightingOnLoad();
       </script>
 
-    <script type="text/javascript" src="//anshu92.github.io/blog/themes/uno/assets/js/main.js?v=1558496686709"></script>
+    <script type="text/javascript" src="//anshu92.github.io/blog/themes/uno/assets/js/main.js?v=1558496780388"></script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
