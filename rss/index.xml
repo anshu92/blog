@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 22 May 2019 03:46:20 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[4: Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 22 May 2019 03:48:07 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[4: Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
 <p><strong><em>helpful links:</em></strong></p>
 </div>
 <div class="ulist">
@@ -18,7 +18,7 @@
 <p>Probabilistic graphical models represent rich representational structure to model processes. Inference then, is the process of getting insights from the structure in response to queries, and in the presence of certain evidence or observations.</p>
 </div>
 <div class="paragraph">
-<p>Among these set of models, from Bayesian to Markov models where we have a set of observations say 'e' about some variable 'E', we have two kinds of queries  that are of interest -</p>
+<p>Among these set of models, from Bayesian to Markov models where we have a set of observations say 'e' about some variable 'E', we have two kinds of queries  that are usually of interest -</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
