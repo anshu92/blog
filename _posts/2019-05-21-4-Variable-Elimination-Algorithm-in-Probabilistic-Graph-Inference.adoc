@@ -18,8 +18,9 @@ Probabilistic graphical models represent rich representational structure to mode
 
 Among these set of models, from Bayesian to Markov models where we have a set of observations say 'e' about some variable 'E', we have two kinds of queries  that are of interest - 
 
-1) Conditional probability query - we are looking for a subset of all graph variables Y, i.e., we are trying to compute P(Y | E=e)
-2) Maximum a posteriori (MAP) query - we are looking for all values of Y, where Y is all variables except the evidence E that maximizes P(Y | E=e) (argmax_y p(y=y | E=e)
+1. Conditional probability query - we are looking for a subset of all graph variables Y, i.e., we are trying to compute P(Y | E=e)
+
+2. Maximum a posteriori (MAP) query - we are looking for all values of Y, where Y is all variables except the evidence E that maximizes P(Y | E=e) (argmax_y p(y=y | E=e)
 
 Both these problems are theoretically NP-hard but that is the worst case situation. In general there are many strategies that make inference on PGMs tractable. There are many inference algorithms like Variable elimination, Message passing over a graph, belief propogation, variational approximation, Random sampling instantiations (Markov chain Monte Carlo, importance sampling).
 
