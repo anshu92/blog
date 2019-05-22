@@ -16,7 +16,7 @@
 
 Probabilistic graphical models represent rich representational structure to model processes. Inference then, is the process of getting insights from the structure in response to queries, and in the presence of certain evidence or observations.
 
-Among these set of models, from Bayesian to Markov models where we have a set of observations say 'e' about some variable 'E', we have two kinds of queries  that are of interest - 
+Among these set of models, from Bayesian to Markov models where we have a set of observations say 'e' about some variable 'E', we have two kinds of queries  that are usually of interest - 
 
 1. *Conditional probability query* - we are looking for a subset of all graph variables Y, i.e., we are trying to compute P(Y | E=e)
 
