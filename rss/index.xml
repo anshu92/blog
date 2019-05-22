@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 18 May 2019 14:20:21 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[3: Learning Representations through Causal Invariance]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 22 May 2019 03:40:53 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[4: Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
+<p><strong><em>helpful links:</em></strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://spark-university.s3.amazonaws.com/stanford-pgm/slides/3.2.1-Inf-VE-Alg.pdf">summary of a section of course taught by Daphne Kohler, Stanford</a></p>
+</li>
+<li>
+<p><a href="https://ermongroup.github.io/cs228-notes/inference/ve/" class="bare">https://ermongroup.github.io/cs228-notes/inference/ve/</a></p>
+</li>
+<li>
+<p><a href="http://pgmlearning.herokuapp.com/vElimApp">Cool simulation of variable elimination</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Probabilistic graphical models represent rich representational structure to model processes. Inference then, is the process of getting insights from the structure in response to queries, and in the presence of certain evidence or observations.</p>
+</div>
+<div class="paragraph">
+<p>Among these set of models, from Bayesian to Markov models where we have a set of observations say 'e' about some variable 'E', we have two kinds of queries  that are of interest -</p>
+</div>
+<div class="paragraph">
+<p>1) Conditional probability query - we are looking for a subset of all graph variables Y, i.e., we are trying to compute P(Y | E=e)
+2) Maximum a posteriori (MAP) query - we are looking for all values of Y, where Y is all variables except the evidence E that maximizes P(Y | E=e) (argmax_y p(y=y | E=e)</p>
+</div>
+<div class="paragraph">
+<p>Both these problems are theoretically NP-hard but that is the worst case situation. In general there are many strategies that make inference on PGMs tractable. There are many inference algorithms like Variable elimination, Message passing over a graph, belief propogation, variational approximation, Random sampling instantiations (Markov chain Monte Carlo, importance sampling).</p>
+</div>
+<div class="paragraph">
+<p>Variable Elimination is a form of memoization/dynamic programming algorithm, where we compute factors as we try to eliminate variables along a graph.</p>
+</div>
+<div class="paragraph">
+<p>In it&#8217;s simplest form, we can illustrate its working on a chain of variables (refer to slides provided in the link above). By marginalizing over a series of factors determined by order, which determines the run time of the algorithm, we can progressively eliminate 'local' variables from a factor. Finding the right order of variables is an NP-hard problem.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://image.slidesharecdn.com/lecture11xing-150527174444-lva1-app6892/95/lecture11-xing-17-638.jpg?cb=1432748719" alt="Example">
+</div>
+</div>
+<div class="paragraph">
+<p>Some useful strategies for determining the order of variables to eliminate include min-neighbors (Choose a variable with the fewest dependent variables), min-weight (Choose variables to minimize the product of the cardinalities of its dependent variables), min-fill (Choose vertices to minimize the size of the factor that will be added to the graph)</p>
+</div>]]></description><link>https://anshu92.github.io/blog/2019/05/21/4-Variable-Elimination-Algorithm-in-Probabilistic-Graph-Inference.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/05/21/4-Variable-Elimination-Algorithm-in-Probabilistic-Graph-Inference.html</guid><category><![CDATA[probabilistic graphical models]]></category><category><![CDATA[pgm]]></category><category><![CDATA[inference]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Tue, 21 May 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[3: Learning Representations through Causal Invariance]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="https://www.technologyreview.com/s/613502/deep-learning-could-reveal-why-the-world-works-the-way-it-does/?fbclid=IwAR2g29PKHoaqKU4P6mWcTwXKiCrm5QOJJ_-wCzzchC1QPpthVkOFLnG5W1w"><em>Summary of talk by Leon Bottou at ICLR 2019</em></a></p>
