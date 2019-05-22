@@ -18,13 +18,13 @@ Probabilistic graphical models represent rich representational structure to mode
 
 Among these set of models, from Bayesian to Markov models where we have a set of observations say 'e' about some variable 'E', we have two kinds of queries  that are of interest - 
 
-1. Conditional probability query - we are looking for a subset of all graph variables Y, i.e., we are trying to compute P(Y | E=e)
+1. *Conditional probability query* - we are looking for a subset of all graph variables Y, i.e., we are trying to compute P(Y | E=e)
 
-2. Maximum a posteriori (MAP) query - we are looking for all values of Y, where Y is all variables except the evidence E that maximizes P(Y | E=e) (argmax_y p(y=y | E=e)
+2. *Maximum a posteriori (MAP) query* - we are looking for all values of Y, where Y is all variables except the evidence E that maximizes P(Y | E=e) (argmax_y p(y=y | E=e)
 
 Both these problems are theoretically NP-hard but that is the worst case situation. In general there are many strategies that make inference on PGMs tractable. There are many inference algorithms like Variable elimination, Message passing over a graph, belief propogation, variational approximation, Random sampling instantiations (Markov chain Monte Carlo, importance sampling).
 
-Variable Elimination is a form of memoization/dynamic programming algorithm, where we compute factors as we try to eliminate variables along a graph. 
+Variable Elimination is a form of *memoization/dynamic programming algorithm*, where we compute factors as we try to eliminate variables along a graph. 
 
 In it's simplest form, we can illustrate its working on a chain of variables (refer to slides provided in the link above). By marginalizing over a series of factors determined by order, which determines the run time of the algorithm, we can progressively eliminate 'local' variables from a factor. Finding the right order of variables is an NP-hard problem. 
 
