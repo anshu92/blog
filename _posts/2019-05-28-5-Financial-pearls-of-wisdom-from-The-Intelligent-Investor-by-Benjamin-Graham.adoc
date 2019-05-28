@@ -4,7 +4,7 @@
 // :published_at: 2019-01-31
 // :hp-tags: HubPress, Blog, Open_Source,
 // :hp-alt-title: My English Title
-= 5: Financial pearls of wisdom from _The Intelligent Investor by Benjamin Graham_
+= 5: Financial pearls of wisdom from The Intelligent Investor by Benjamin Graham
 
 :hp-tags: finance, investing
 
