@@ -1,0 +1,45 @@
+// = Your Blog title
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+= 5: Financial pearls of wisdom from _The Intelligent Investor by Benjamin Graham_
+
+:hp-tags: finance, investing
+
+Growing up in a predominantly fixed income culture, a lot of driven arguments on financial channels and sections of newspapers seemed to be made in bad faith, speculative and a certain gambler's expertise. And as a result, I have barely dipped a toe into the stressful art of investing by jumping on trendy bandwagons like cryptocurrency and robo-investing - staying away from any serious investing or building anything that can be termed as a 'portfolio'. However, recently I came across a https://www.kaggle.com/c/two-sigma-financial-news[kaggle competition] that aimed at predicting stock movements based on news articles. This peeked my interest in the game-like aspects of financial markets and quantitative finance. In order to gain a more balanced perspective on making informed financial decisions, I decided to read _The Intelligent Investor by Benjamin Graham_. Following is a commentary on salient ideas that I found interesting.
+
+### Investment vs Speculation
+- An investment operation is one which, upon thorough analysis, promises safety of principal and an adequate return.
+- Elements of investing -
+1. Thoroughly analyze a company and soundness of its businesses before buying stock.
+2. Deliberately protect against serious losses.
+3. Aspire to 'adequate', not extraordinary performance.
+- Speculation is buying stocks with a risk of loss. As Oscar Wilde puts it, a cynic knows the price of everything, but the value of nothing.
+- Speculating formulas that have failed in the past -
+1. https://en.wikipedia.org/wiki/January_effect[January effect]
+2. https://en.wikipedia.org/wiki/James_O%27Shaughnessy[Do what works by James O'Shaugnessy]
+3. https://jesse-livermore.com/the-foolish-four-and-trading-patterns/[Foolish Four]
+- Investing is less about predicting the behavior of the markets, and more about predicting and controlling your own behavior.
+
+### Defensive vs Aggressive Investing
+Defensive investing aims at minimizing the risk of losing principal while aggressive investing aims at maximizing return on investment.
+
+### Shorting
+1. Borrow shares from someone
+2. Sell the borrowed shares at a higher price
+3. Buy replacement shares at lower price
+
+### Inflation
+
+Funny quote - _"Americans are getting stronger, 20 years ago, it took two people to carry ten dollars worth of groceries. Today, a five year old can do it." - Henry Youngman_
+
+- *Money Illusion* - This is the phenomena when we prefer a nominal positive change in received value, even if the real/net value is negative. For example, we prefer a 2% pay raise when inflation is 4% over 2% pay cut when inflation is 0%.
+- Strategies to fight inflation
+1. REITs - Real Estate Investment Trusts
+2. TIPS - Treasury Inflated Protected Securities. Backed by US govt, values rises with inflation. The catch is that the income might become taxable by IRS when inflation rises and the value of the securities rises.
+
+This is how far I have gotten in the book (2 chapters). I will keep updating as I read on.
+
+
