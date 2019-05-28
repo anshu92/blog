@@ -5,7 +5,6 @@
 // :hp-tags: HubPress, Blog, Open_Source,
 // :hp-alt-title: My English Title
 = 5: Financial pearls of wisdom from The Intelligent Investor by Benjamin Graham
-
 :hp-tags: finance, investing
 
 Growing up in a predominantly fixed income culture, a lot of driven arguments on financial channels and sections of newspapers seemed to be made in bad faith, speculative and requiring a certain gambler's expertise. And as a result, I have barely dipped a toe into the stressful art of investing by jumping on trendy bandwagons like cryptocurrency and robo-investing - staying away from any serious investing or building anything that can be termed as a 'portfolio'. However, recently I came across a https://www.kaggle.com/c/two-sigma-financial-news[kaggle competition] that aimed at predicting stock movements based on news articles. This peeked my interest in the game-like aspects of financial markets and quantitative finance. In order to gain a more balanced perspective on making informed financial decisions, I decided to read _The Intelligent Investor by Benjamin Graham_. Following is a commentary on salient ideas that I found interesting.
