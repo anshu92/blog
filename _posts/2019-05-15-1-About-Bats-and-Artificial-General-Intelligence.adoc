@@ -1,5 +1,4 @@
 = 1: About Bats and Artificial General Intelligence
-
 :hp-tags: artificial general intelligence, ai, AI, philosophy, consciousness
 
 In many works of fiction where an AI agent comes to life, often the first interaction is an emotional one. Vengeance, lust, fear or joy are tools used to convince us that the agent is human-like intelligent in its motives and actions. And our perceptions of what AGI should look like are polluted by the specificity of our perceptions regarding intelligent agents. A paper I read recently by Thomas Nagel titled _What is it like to be a bat?_ ( <https://en.wikipedia.org/wiki/What_Is_it_Like_to_Be_a_Bat%3F> ) brought to the fore some points about such reductionist viewpoints that I felt were important.
