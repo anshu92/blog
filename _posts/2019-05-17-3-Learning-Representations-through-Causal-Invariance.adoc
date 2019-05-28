@@ -1,5 +1,4 @@
 = 3: Learning Representations through Causal Invariance
-
 :hp-tags: iclr, summary, conference, machine learning, causality
 
 https://www.technologyreview.com/s/613502/deep-learning-could-reveal-why-the-world-works-the-way-it-does/?fbclid=IwAR2g29PKHoaqKU4P6mWcTwXKiCrm5QOJJ_-wCzzchC1QPpthVkOFLnG5W1w[_Summary of talk by Leon Bottou at ICLR 2019_]
