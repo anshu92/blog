@@ -1,6 +1,6 @@
 = Learning Data Augmentation Strategies for Object Detection
 // :hp-image: /covers/cover.png
-// :hp-tags: HubPress, Blog, Open_Source,
+:hp-tags: computer vision, machine learning, object detection
 // :hp-alt-title: My English Title
 
 link:https://arxiv.org/pdf/1906.11172v1.pdf[Paper link]
