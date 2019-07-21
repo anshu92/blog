@@ -1,0 +1,7 @@
+= Learning Data Augmentation Strategies for Object Detection
+link:https://arxiv.org/pdf/1906.11172v1.pdf[Paper link]
+// :hp-image: /covers/cover.png
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+image::http://github.com/anshu92/blog/images/Learning%20Data%20Augmentation%20Strategies%20for%20Object%20Detection.jpg[Notes]
