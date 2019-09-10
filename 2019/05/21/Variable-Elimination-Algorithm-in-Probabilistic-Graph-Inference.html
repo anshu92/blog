@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Variable Elimination Algorithm in Probabilistic Graph Inference - hallucinations</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Variable Elimination Algorithm in Probabilistic Graph Inference">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Variable Elimination Algorithm in Probabilistic Graph Inference">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="//anshu92.github.io/blog/themes/uno/assets/css/uno.css?v=1568110169240" />
+
+    <link rel="canonical" href="https://anshu92.github.io/blog/2019/05/21/Variable-Elimination-Algorithm-in-Probabilistic-Graph-Inference.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="hallucinations" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Variable Elimination Algorithm in Probabilistic Graph Inference" />
+    <meta property="og:description" content="helpful links: summary of a section of course taught by Daphne Kohler, Stanford https://ermongroup.github.io/cs228-notes/inference/ve/ Cool simulation of variable elimination Probabilistic graphical models represent rich representational structure to model processes. Inference then, is the process of getting insights from the structure in response" />
+    <meta property="og:url" content="https://anshu92.github.io/blog/2019/05/21/Variable-Elimination-Algorithm-in-Probabilistic-Graph-Inference.html" />
+    <meta property="article:published_time" content="2019-05-21T00:00:00.000Z" />
+    <meta property="article:tag" content="probabilistic graphical models" />
+    <meta property="article:tag" content="pgm" />
+    <meta property="article:tag" content="inference" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Variable Elimination Algorithm in Probabilistic Graph Inference" />
+    <meta name="twitter:description" content="helpful links: summary of a section of course taught by Daphne Kohler, Stanford https://ermongroup.github.io/cs228-notes/inference/ve/ Cool simulation of variable elimination Probabilistic graphical models represent rich representational structure to model processes. Inference then, is the process of getting insights from the structure in response" />
+    <meta name="twitter:url" content="https://anshu92.github.io/blog/2019/05/21/Variable-Elimination-Algorithm-in-Probabilistic-Graph-Inference.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "hallucinations",
+    "author": {
+        "@type": "Person",
+        "name": "Anshuman Sahoo",
+        "image": "https://avatars0.githubusercontent.com/u/3633052?v=4",
+        "url": "https://anshu92.github.io/blog/author/anshu92/"
+    },
+    "headline": "Variable Elimination Algorithm in Probabilistic Graph Inference",
+    "url": "https://anshu92.github.io/blog/2019/05/21/Variable-Elimination-Algorithm-in-Probabilistic-Graph-Inference.html",
+    "datePublished": "2019-05-21T00:00:00.000Z",
+    "keywords": "probabilistic graphical models, pgm, inference",
+    "description": "helpful links: summary of a section of course taught by Daphne Kohler, Stanford https://ermongroup.github.io/cs228-notes/inference/ve/ Cool simulation of variable elimination Probabilistic graphical models represent rich representational structure to model processes. Inference then, is the process of getting insights from the structure in response"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="hallucinations" href="https://anshu92.github.io/blog/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/themes/prism-okaidia.min.css">
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+</head>
+<body class="post-template tag-probabilistic-graphical-models tag-pgm tag-inference no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " style="background-image: url(/blog/images/cover/cover.jpg)">
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="https://anshu92.github.io/blog" title="link to homepage for hallucinations"><img src="/blog/images/profile.jpg" width="80" alt="hallucinations logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="https://anshu92.github.io/blog" title="link to homepage for hallucinations">hallucinations</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">by anshuman sahoo</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="https://anshu92.github.io/blog/#blog" title="link to hallucinations blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="https://github.com/anshu92" title="Github account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+                  <!-- LinkedIn -->
+                  <li class="navigation__item">
+                    <a href="https://ca.linkedin.com/in/anshuman-sahoo-60386b59" title="LinkedIn account">
+                      <i class='icon icon-social-linkedin'></i>
+                      <span class="label">LinkedIn</span>
+                    </a>
+                  </li>
+              
+                  <!-- Email -->
+                  <li class="navigation__item">
+                    <a href="mailto:anshuman264@gmail.com" title="Email anshuman264@gmail.com">
+                      <i class='icon icon-mail'></i>
+                      <span class="label">Email</span>
+                    </a>
+                  </li>
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="21 May 2019" class="post-meta__date date">21 May 2019</time> &#8226; <span class="post-meta__tags tags">on <a href="https://anshu92.github.io/blog/tag/probabilistic-graphical-models/">probabilistic graphical models</a>, <a href="https://anshu92.github.io/blog/tag/pgm/">pgm</a>, <a href="https://anshu92.github.io/blog/tag/inference/">inference</a></span>
+        <span class="post-meta__author author"><img src="https://avatars0.githubusercontent.com/u/3633052?v&#x3D;4" alt="profile image for Anshuman Sahoo" class="avatar post-meta__avatar" /> by Anshuman Sahoo</span>
+      </div>
+      <h1 class="post-title">Variable Elimination Algorithm in Probabilistic Graph Inference</h1>
+    </header>
+
+    <section class="post tag-probabilistic-graphical-models tag-pgm tag-inference">
+      <div class="paragraph">
+<p><strong><em>helpful links:</em></strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://spark-university.s3.amazonaws.com/stanford-pgm/slides/3.2.1-Inf-VE-Alg.pdf">summary of a section of course taught by Daphne Kohler, Stanford</a></p>
+</li>
+<li>
+<p><a href="https://ermongroup.github.io/cs228-notes/inference/ve/" class="bare">https://ermongroup.github.io/cs228-notes/inference/ve/</a></p>
+</li>
+<li>
+<p><a href="http://pgmlearning.herokuapp.com/vElimApp">Cool simulation of variable elimination</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Probabilistic graphical models represent rich representational structure to model processes. Inference then, is the process of getting insights from the structure in response to queries, and in the presence of certain evidence or observations.</p>
+</div>
+<div class="paragraph">
+<p>Among these set of models, from Bayesian to Markov models where we have a set of observations say 'e' about some variable 'E', we have two kinds of queries  that are usually of interest -</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Conditional probability query</strong> - we are looking for a subset of all graph variables Y, i.e., we are trying to compute P(Y | E=e)</p>
+</li>
+<li>
+<p><strong>Maximum a posteriori (MAP) query</strong> - we are looking for all values of Y, where Y is all variables except the evidence E that maximizes P(Y | E=e) (argmax_y p(y=y | E=e)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Both these problems are theoretically NP-hard but that is the worst case situation. In general there are many strategies that make inference on PGMs tractable. There are many inference algorithms like Variable elimination, Message passing over a graph, belief propogation, variational approximation, Random sampling instantiations (Markov chain Monte Carlo, importance sampling).</p>
+</div>
+<div class="paragraph">
+<p>Variable Elimination is a form of <strong>memoization/dynamic programming algorithm</strong>, where we compute factors as we try to eliminate variables along a graph.</p>
+</div>
+<div class="paragraph">
+<p>In it&#8217;s simplest form, we can illustrate its working on a chain of variables (refer to slides provided in the link above). By marginalizing over a series of factors determined by order, which determines the run time of the algorithm, we can progressively eliminate 'local' variables from a factor. Finding the right order of variables is an NP-hard problem.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://image.slidesharecdn.com/lecture11xing-150527174444-lva1-app6892/95/lecture11-xing-17-638.jpg?cb=1432748719" alt="Example">
+</div>
+</div>
+<div class="paragraph">
+<p>Some useful strategies for determining the order of variables to eliminate include min-neighbors (Choose a variable with the fewest dependent variables), min-weight (Choose variables to minimize the product of the cardinalities of its dependent variables), min-fill (Choose vertices to minimize the size of the factor that will be added to the graph)</p>
+</div>
+    </section>
+
+  </article>
+
+
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2019. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="https://hubpress.github.io" title="link to Hubpress website">Hubpress</a></span>
+            </footer>
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/prism.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        // hljs.initHighlightingOnLoad();
+      </script>
+
+    <script type="text/javascript" src="//anshu92.github.io/blog/themes/uno/assets/js/main.js?v=1568110169240"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90558314-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
