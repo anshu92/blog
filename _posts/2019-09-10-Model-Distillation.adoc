@@ -8,7 +8,7 @@
 
 image::https://github.com/anshu92/blog/raw/gh-pages/images/carolien-van-oijen-GRlRHqEqZTc-unsplash.jpg[Bee]
 
-[%hardbreaks]
+'''
 .Recent NLP language models
 [width="60%",cols="<2*",stripes="odd",options="header",frame="all"]
 |========================================================
