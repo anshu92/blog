@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Sep 2019 10:10:02 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Probabilistic Graphical Models - Message Passing in Cluster Graphs]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Sep 2019 10:10:16 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Probabilistic Graphical Models - Message Passing in Cluster Graphs]]></title><description><![CDATA[<div class="paragraph">
 <p><a href="https://www.coursera.org/learn/probabilistic-graphical-models-2-inference">Course link</a></p>
 </div>
 <div class="imageblock">
@@ -12,14 +12,7 @@
 <div class="content">
 <img src="https://github.com/anshu92/blog/raw/master/images/PGM%20VARIABLE%20ELIMINATION.jpg" alt="Notes">
 </div>
-</div>]]></description><link>https://anshu92.github.io/blog/2019/07/20/Probabilistic-Graphical-Models-Variable-Elimination.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/07/20/Probabilistic-Graphical-Models-Variable-Elimination.html</guid><category><![CDATA[probabilistic graphical models]]></category><category><![CDATA[pgm]]></category><category><![CDATA[machine learning]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Learning Data Augmentation Strategies for Object Detection]]></title><description><![CDATA[<div class="paragraph">
-<p><a href="https://arxiv.org/pdf/1906.11172v1.pdf">Paper link</a></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="https://github.com/anshu92/blog/raw/master/images/Learning%20Data%20Augmentation%20Strategies%20for%20Object%20Detection.jpg" alt="Notes">
-</div>
-</div>]]></description><link>https://anshu92.github.io/blog/2019/07/20/Learning-Data-Augmentation-Strategies-for-Object-Detection.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/07/20/Learning-Data-Augmentation-Strategies-for-Object-Detection.html</guid><category><![CDATA[computer vision]]></category><category><![CDATA[machine learning]]></category><category><![CDATA[object detection]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
+</div>]]></description><link>https://anshu92.github.io/blog/2019/07/20/Probabilistic-Graphical-Models-Variable-Elimination.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/07/20/Probabilistic-Graphical-Models-Variable-Elimination.html</guid><category><![CDATA[probabilistic graphical models]]></category><category><![CDATA[pgm]]></category><category><![CDATA[machine learning]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
 <p><strong><em>helpful links:</em></strong></p>
 </div>
 <div class="ulist">
