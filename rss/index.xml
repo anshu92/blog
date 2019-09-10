@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Sep 2019 10:09:29 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Probabilistic Graphical Models - Message Passing in Cluster Graphs]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Sep 2019 10:10:02 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Probabilistic Graphical Models - Message Passing in Cluster Graphs]]></title><description><![CDATA[<div class="paragraph">
 <p><a href="https://www.coursera.org/learn/probabilistic-graphical-models-2-inference">Course link</a></p>
 </div>
 <div class="imageblock">
@@ -19,112 +19,7 @@
 <div class="content">
 <img src="https://github.com/anshu92/blog/raw/master/images/Learning%20Data%20Augmentation%20Strategies%20for%20Object%20Detection.jpg" alt="Notes">
 </div>
-</div>]]></description><link>https://anshu92.github.io/blog/2019/07/20/Learning-Data-Augmentation-Strategies-for-Object-Detection.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/07/20/Learning-Data-Augmentation-Strategies-for-Object-Detection.html</guid><category><![CDATA[computer vision]]></category><category><![CDATA[machine learning]]></category><category><![CDATA[object detection]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[5: Financial pearls of wisdom from The Intelligent Investor by Benjamin Graham]]></title><description><![CDATA[<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>Growing up in a predominantly fixed income culture, a lot of driven arguments on financial channels and sections of newspapers seemed to be made in bad faith, speculative and requiring a certain gambler&#8217;s expertise. And as a result, I have barely dipped a toe into the stressful art of investing by jumping on trendy bandwagons like cryptocurrency and robo-investing - staying away from any serious investing or building anything that can be termed as a 'portfolio'. However, recently I came across a <a href="https://www.kaggle.com/c/two-sigma-financial-news">kaggle competition</a> that aimed at predicting stock movements based on news articles. This peaked my interest in the game-like aspects of financial markets and quantitative finance. In order to gain a more balanced perspective on making informed financial decisions, I decided to read <em>The Intelligent Investor by Benjamin Graham</em>. Following is a commentary on salient ideas that I found interesting.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_investment_vs_speculation">Investment vs Speculation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>An investment operation is one which, upon thorough analysis, promises safety of principal and an adequate return.</p>
-</li>
-<li>
-<p>Elements of investing -</p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Thoroughly analyze a company and soundness of its businesses before buying stock.</p>
-</li>
-<li>
-<p>Deliberately protect against serious losses.</p>
-</li>
-<li>
-<p>Aspire to 'adequate', not extraordinary performance.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Speculation is buying stocks with a risk of loss. As Oscar Wilde puts it, a cynic knows the price of everything, but the value of nothing.</p>
-</li>
-<li>
-<p>Speculating formulas that have failed in the past -</p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p><a href="https://en.wikipedia.org/wiki/January_effect">January effect</a></p>
-</li>
-<li>
-<p><a href="https://en.wikipedia.org/wiki/James_O%27Shaughnessy">Do what works by James O&#8217;Shaugnessy</a></p>
-</li>
-<li>
-<p><a href="https://jesse-livermore.com/the-foolish-four-and-trading-patterns/">Foolish Four</a></p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Investing is less about predicting the behavior of the markets, and more about predicting and controlling your own behavior.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_defensive_vs_aggressive_investing">Defensive vs Aggressive Investing</h3>
-<div class="paragraph">
-<p>Defensive investing aims at minimizing the risk of losing principal while aggressive investing aims at maximizing return on investment.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_shorting">Shorting</h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Borrow shares from someone</p>
-</li>
-<li>
-<p>Sell the borrowed shares at a higher price</p>
-</li>
-<li>
-<p>Buy replacement shares at lower price</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_inflation">Inflation</h3>
-<div class="paragraph">
-<p>Funny quote - <em>"Americans are getting stronger, 20 years ago, it took two people to carry ten dollars worth of groceries. Today, a five year old can do it." - Henry Youngman</em></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Money Illusion</strong> - This is the phenomena when we prefer a nominal positive change in received value, even if the real/net value is negative. For example, we prefer a 2% pay raise when inflation is 4% over 2% pay cut when inflation is 0%.</p>
-</li>
-<li>
-<p>Strategies to fight inflation</p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>REITs - Real Estate Investment Trusts</p>
-</li>
-<li>
-<p>TIPS - Treasury Inflated Protected Securities. Backed by US govt, values rises with inflation. The catch is that the income might become taxable by IRS when inflation rises and the value of the securities rises.</p>
-</li>
-</ol>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>This is how far I have gotten in the book (2 chapters). I will keep updating as I read on.</p>
-</div>
-</div>]]></description><link>https://anshu92.github.io/blog/2019/05/28/5-Financial-pearls-of-wisdom-from-The-Intelligent-Investor-by-Benjamin-Graham.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/05/28/5-Financial-pearls-of-wisdom-from-The-Intelligent-Investor-by-Benjamin-Graham.html</guid><category><![CDATA[finance]]></category><category><![CDATA[investing]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
+</div>]]></description><link>https://anshu92.github.io/blog/2019/07/20/Learning-Data-Augmentation-Strategies-for-Object-Detection.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/07/20/Learning-Data-Augmentation-Strategies-for-Object-Detection.html</guid><category><![CDATA[computer vision]]></category><category><![CDATA[machine learning]]></category><category><![CDATA[object detection]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
 <p><strong><em>helpful links:</em></strong></p>
 </div>
 <div class="ulist">
