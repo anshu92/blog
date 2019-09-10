@@ -1,4 +1,4 @@
-= 2: ArcFace and other Geodesic Distance Loss Functions
+= ArcFace and other Geodesic Distance Loss Functions
 :hp-tags: ML, machine learning, optimization, loss, computer vision, classification, summary, opinion
 
 _Paper:_ ArcFace: Additive Angular Margin Loss for Deep Face Recognition <https://arxiv.org/pdf/1801.07698.pdf>
