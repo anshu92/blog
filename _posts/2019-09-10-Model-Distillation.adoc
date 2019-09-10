@@ -10,7 +10,7 @@ image::https://github.com/anshu92/blog/raw/gh-pages/images/carolien-van-oijen-GR
 
 '''
 .Recent NLP language models
-[width="60%",cols="<2*",stripes="odd",options="header",frame="all"]
+[width="60%",cols="<,<",stripes="odd",options="header",frame="all"]
 |========================================================
 |model
 |parameters
