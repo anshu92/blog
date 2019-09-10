@@ -1,0 +1,48 @@
+= 2: ArcFace and other Geodesic Distance Loss Functions
+:hp-tags: ML, machine learning, optimization, loss, computer vision, classification, summary, opinion
+
+_Paper:_ ArcFace: Additive Angular Margin Loss for Deep Face Recognition <https://arxiv.org/pdf/1801.07698.pdf>
+
+A challenge for DCNN (Deep Convolutional Neural Networks) based classification/recognition models is the closed-set nature of loss functions like Softmax as well as the fact that the learnt features are often not discriminative enough - and are often fooled by examples from the wild. A popular problem area that these particular issues are well highlighted is facial recognition, which is the topic of the paper above. However, I believe that the solutions applied to facial recognition here can be transferred to other areas that use features learnt through various DCNN architectures for some classification task.
+
+### Intra-class compactness and Inter-class separability
+In the design of loss functions that solve the challenges laid out above, two outcomes are desirable - one is that learnt features and weights of a particular class should lie close together in the vector space we are optimizing in (for Softmax, this is the Eucledian space). Center loss (which was the state of the art in facial recognition task before ArcFace) penalizes the distance between deep features and their corresponding class centres in the Euclidean space and hence attempts to achieve *intra-class compactness*. Another important loss function, SphereFace introduced the idea that the transformation matrix in the final fully connected layer can be used to represent class centers in angular space and penalize angles between deep features and weights in a multiplicative way. Both these losses helped improve the intra-class compactness but did not improve the inter-class separability. Eventually, this led to a popular line of research to incorporate margins in well-established loss functions in order to maximize inter-class separability.
+
+### Geodesic Distance Optimization
+Geodesic distance between two points is the shortest distance between them on the a multi-dimensional surface (on a sphere, it is the arc between two points that forms part of the circle containing those points). There are 4 kinds of constraints we consider for this - Margin loss (insert a distance margin between samples and centers), Intra loss (decrease distance between sample and corresponding center), Inter loss (increase the distance between centers) and Triplet loss(insert margin between triplet samples <https://en.wikipedia.org/wiki/Triplet_loss>). Experiments have shown that Margin loss is the most effective strategy. By normalizing vectors so that the geodesic distance between them is the arc length on some n-dim sphere, we can reduce the problem to optimizing the angle between the vectors. In essence, this is what ArcFace aims at achieving.
+
+.Comparison of ArcFace to comparable loss functions
+[width="80%",cols="20%,80%a"]
+|=========================================================
+|Softmax | * Size of linear transformation matrix increases linearly with number of classes 
+* Learned features are separable for closed set classification but not open-set recognition problems.
+|Triplet | * Combinatorial explosion in number of image triplets
+* Difficulties in mining semi-hard samples, making effective training hard
+|Center | * Updating the class centers during training is difficult as the number of classes increases
+|SphereFace | * Loss function requires lots of approximations which lead to unstable training. They had to hybridize with standard softmax to stabilize training.
+|CosFace | * Better than SphereFace but relieves the need for joint supervision from the softmax loss.
+|ArcFace | * Directly optimizes the geodesic distance margin by optimizing the angle and hence the arc in the normalized hypersphere. It is easy to implement and adds negligible complexity.
+
+|=========================================================
+
+### Quick Derivation from Softmax
+
+image::https://cdn-images-1.medium.com/max/1600/1*lC5r61pId49Za7o0A1uvng.png[Softmax]
+
+Here, N refers to batch size and n refers to class number. Next, we take the bias term out as equal to 0. This allows us to define the logit as - 
+
+image::https://cdn-images-1.medium.com/max/1600/1*Rdqmp3_k3YhF6Wcii4aMTg.png[Angle]
+
+Then we apply L2 normalization to the weight tensor to make it equal to 1. The feature tensor is also normalized and re-scaled to 's' which corresponds to the radius of the hypersphere. This gives us - 
+
+image::https://cdn-images-1.medium.com/max/1600/1*lyJ1a8cd5mjnYmgj9tMV9g.png[L2]
+
+The additive angular margin is then added to the angle between feature and weight to get - 
+
+image::https://github.com/anshu92/blog/raw/gh-pages/images/L3.png[L3]
+
+The paper also mentions combining SphereFace, CosFace and ArcFace into a unified metric - 
+
+image::https://github.com/anshu92/blog/raw/gh-pages/images/CM1.png[CM1]
+
+I have used this loss in my projects and it works really well in discriminating between subtly different classes.
