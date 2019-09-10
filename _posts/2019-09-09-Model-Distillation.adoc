@@ -1,0 +1,11 @@
+= Model Distillation
+====================================
+:hp-image: /covers/cover.png
+:published_at: 2019-09-09
+:hp-tags: distillation, machine learning
+
+I came across http://www.nlp.town/blog/distilling-bert/[this blog post] a couple of weeks ago about 'distilling' BERT, which is a very large language model into a much smaller model with minimal loss of performance. 
+
+``+BERT's base and multilingual models are transformers with 12 layers, a hidden size of 768 and 12 self-attention heads - no less than 110 million parameters in total. BERT-large sports a whopping 340M parameters. Still, BERT dwarfs in comparison to even more recent models, such as Facebook's XLM with 665M parameters and OpenAI's GPT-2 with 774M.+``
+
+The idea of model distillation is one that provides some intuition about the relationship of learning we want our models to aquire with the dynamics and level of empathy to our perception of 'correct' the model actually achieves.
