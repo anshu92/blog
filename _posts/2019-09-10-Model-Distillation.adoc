@@ -4,7 +4,7 @@
 :hp-tags: distillation, machine learning
 
 [.lead]
-How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.
+*How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.*
 
 .Recent NLP language models
 [width="60%",cols="^m,e",options="header"]
