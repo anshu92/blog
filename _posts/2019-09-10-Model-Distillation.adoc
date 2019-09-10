@@ -10,10 +10,10 @@ image::https://github.com/anshu92/blog/raw/gh-pages/images/carolien-van-oijen-GR
 
 '''
 .Recent NLP language models
-[width="60%",cols="<,<",stripes="odd",options="header",frame="all"]
+[width="60%",cols="<,<",stripes="odd",frame="all",grid="all"]
 |========================================================
-|model
-|parameters
+|*model*
+|*parameters*
 
 |BERT-base
 |110 million
