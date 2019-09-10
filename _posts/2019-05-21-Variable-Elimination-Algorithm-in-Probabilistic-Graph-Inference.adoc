@@ -5,7 +5,7 @@
 // :hp-tags: HubPress, Blog, Open_Source,
 // :hp-alt-title: My English Title
 
-= 4: Variable Elimination Algorithm in Probabilistic Graph Inference
+= Variable Elimination Algorithm in Probabilistic Graph Inference
 :hp-tags: probabilistic graphical models, pgm, inference
 
 *_helpful links:_*
