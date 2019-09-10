@@ -7,14 +7,21 @@
 *How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.*
 
 .Recent NLP language models
-[width="60%",cols="^m,^me", frame="topbot", options="header"]
+[width="60%",cols=",e", frame="topbot", options="header"]
 |===
 |model |parameters
 
-|BERT-base |110 million
-|BERT-large |340 million
-|Facebook XLM |665 million
-|OpenAI GPT-2 |774 million
+|BERT-base
+|110 million
+
+|BERT-large
+|340 million
+
+|Facebook XLM
+|665 million
+
+|OpenAI GPT-2
+|774 million
 |===
 
 The upward trend of model sizes raises hurdles for the application of these models in the shape of computation and scalability, and requires decisions on the trade-off between accuracy, potency and deployability. Following reading [this blog post](http://www.nlp.town/blog/distilling-bert/), I decided to try to summarize (distill) the concept of model distillation, and talk about why this struck me as such an interesting idea.
