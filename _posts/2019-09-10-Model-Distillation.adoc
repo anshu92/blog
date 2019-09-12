@@ -1,17 +1,19 @@
 = Model Distillation
-:hp-image: /covers/cover.png
+:hp-image: https://github.com/anshu92/blog/raw/gh-pages/images/carolien-van-oijen-GRlRHqEqZTc-unsplash.jpg
 :published_at: 2019-09-10
 :hp-tags: distillation, machine learning
 
 [.lead]
 *How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.*
 
-.Recent NLP language models
+image::https://github.com/anshu92/blog/raw/gh-pages/images/carolien-van-oijen-GRlRHqEqZTc-unsplash.jpg[Bee]
 
-[width="60%",cols=",e", stripes=even, options="header"]
-|========================================================
-|model
-|parameters
+'''
+.Recent NLP language models
+[width="50%",cols="<,<",frame="all",grid="all"]
+|===
+|*model*
+|*parameters*
 
 |BERT-base
 |110 million
@@ -24,6 +26,8 @@
 
 |OpenAI GPT-2
 |774 million
-|========================================================
+|===
 
-The upward trend of model sizes raises hurdles for the application of these models in the shape of computation and scalability, and requires decisions on the trade-off between accuracy, potency and deployability. Following reading [this blog post](http://www.nlp.town/blog/distilling-bert/), I decided to try to summarize (distill) the concept of model distillation, and talk about why this struck me as such an interesting idea.
+The upward trend of model sizes raises hurdles for the application of these models in the shape of computation and scalability, and requires decisions on the trade-off between accuracy, potency and deployability. Following reading http://www.nlp.town/blog/distilling-bert/[this blog post], I decided to try to summarize (distill) the concept of model distillation, and talk about why this struck me as such an interesting idea.
+
+
