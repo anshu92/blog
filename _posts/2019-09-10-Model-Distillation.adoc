@@ -31,6 +31,7 @@ image::https://github.com/anshu92/blog/raw/gh-pages/images/carolien-van-oijen-GR
 
 The upward trend of model sizes raises hurdles for the application of these models in the shape of computation and scalability, and requires decisions on the trade-off between accuracy, potency and deployability. Following reading http://www.nlp.town/blog/distilling-bert/[this blog post], I decided to try to summarize (distill) the concept of model distillation, and talk about why this struck me as such an interesting idea.
 
+.Model Distillation. graphic by Anshuman Sahoo
 image::https://github.com/anshu92/blog/raw/gh-pages/images/distill.png[Model Distillation]
 
 '''
@@ -39,6 +40,7 @@ As shown above, the method of distillation relies on the idea of *_soft targets_
 
 '''
 
+.Softmax Function with Temperature
 image::https://github.com/anshu92/blog/raw/gh-pages/images/tempsoftmax.png[Model Distillation]
 
 '''
