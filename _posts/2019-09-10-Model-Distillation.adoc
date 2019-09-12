@@ -49,5 +49,13 @@ https://arxiv.org/pdf/1503.02531.pdf[Hinton et al., 2015] introduced the concept
 
 On a philosophical line of thought, the paper presents an analogy of some insects in nature that optimize based on their stage-of-life requirement - larval forms to extract nutrition from environment and an adult form for travellig and reproduction; whereas cumbersome, large and often ensemble models remain the same during training and deployment. A conceptual block that may explain our hesitation of modifying trained models is our assumption that changing learned parameters may lead to loss of knowledge. Another assumption made is that the optimizing an objective function for the training set is close to optimizing the user's true objective - generalizing well to unseen data. However, ideal generalization to the user objective requires knowledge that might not be available in the training data.
 
+Using the output of the teacher model allows the student model to learn not just about the correct class(as it would in the case of hard labels) but also the relative incorrectness of the other classes. For instance, knowledge that a cat is closer to a tiger than a carrot is valuable for generalization of the model. Quoting from the paper - 
+
+[quote, Hinton et al., 2015]
+____
+When the soft targets have high entropy, they provide much more information per training case than hard targets and much less variance in the gradient between training cases, so the small model can often be trained on much
+less data than the original cumbersome model and using a much higher learning rate.
+____
+
 
 
