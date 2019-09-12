@@ -41,5 +41,9 @@ As shown above, the method of distillation relies on the idea of *_soft targets_
 
 image::https://github.com/anshu92/blog/raw/gh-pages/images/tempsoftmax.png[Model Distillation]
 
+'''
+
+https://arxiv.org/pdf/1503.02531.pdf[Hinton et al., 2015] introduced the concept of "softmax temperature". The probability p~i~ of class i is calculated from the logits z. T is the temperature parameter - as you can see, setting T = 1 gives us the standard softmax function.
+
 
 
