@@ -41,7 +41,7 @@ As shown above, the method of distillation relies on the idea of *_soft targets_
 '''
 
 .Softmax Function with Temperature
-image::https://github.com/anshu92/blog/raw/gh-pages/images/tempsoftmax.png[Model Distillation]
+image::https://github.com/anshu92/blog/raw/gh-pages/images/tempsoftmax.png[Model Distillation,align="center"]
 
 '''
 
