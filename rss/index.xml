@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 12 Sep 2019 03:55:52 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div class="paragraph lead">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 12 Sep 2019 03:57:13 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div class="paragraph lead">
 <p><strong>How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.</strong></p>
 </div>
 <div class="imageblock">
@@ -51,7 +51,7 @@
 <p>As shown above, the method of distillation relies on the idea of <strong><em>soft targets</em></strong> and <strong><em>softmax temperature</em></strong>.</p>
 </div>
 <hr>
-<div class="imageblock">
+<div class="imageblock" style="text-align: center">
 <div class="content">
 <img src="https://github.com/anshu92/blog/raw/gh-pages/images/tempsoftmax.png" alt="Model Distillation">
 </div>
