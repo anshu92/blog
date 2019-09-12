@@ -33,4 +33,7 @@ The upward trend of model sizes raises hurdles for the application of these mode
 
 image::https://github.com/anshu92/blog/raw/gh-pages/images/distill.png[Model Distillation]
 
+As shown above, the method of distillation relies on the idea of *_soft targets_* and *_softmax temperature_*.
+
+image::https://github.com/anshu92/blog/raw/gh-pages/images/tempsoftmax.png[Model Distillation]
 
