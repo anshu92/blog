@@ -27,7 +27,10 @@ image::https://github.com/anshu92/blog/raw/gh-pages/images/carolien-van-oijen-GR
 |OpenAI GPT-2
 |774 million
 |===
+'''
 
 The upward trend of model sizes raises hurdles for the application of these models in the shape of computation and scalability, and requires decisions on the trade-off between accuracy, potency and deployability. Following reading http://www.nlp.town/blog/distilling-bert/[this blog post], I decided to try to summarize (distill) the concept of model distillation, and talk about why this struck me as such an interesting idea.
+
+image::https://github.com/anshu92/blog/raw/gh-pages/images/distill.png[Model Distillation]
 
 
