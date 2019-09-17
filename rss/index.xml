@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 02:05:21 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 02:25:04 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
 <p><strong>How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.</strong></p>
@@ -110,6 +110,28 @@ less data than the original cumbersome model and using a much higher learning ra
 </div>
 <div class="paragraph">
 <p>Another surprising result from MNIST is that if one class, say 3, is left out of the training set, and the smaller model is trained on the outputs of the larger. If we then adjust the bias of class 3 (this is needed because the smaller model has never seen 3, and assumes it to be improbable), we can actually get 98.6% of the test cases for 3 by the knowledge we learn about it from the other classes. In a similar way, if we only train on 7s and 8s, and lower their biases appropriately, the smaller model achieves 87% across all 10 classes!</p>
+</div>
+<div class="paragraph">
+<p>Setting the limit for temperature in the soft target formula is equivalent to matching logits as in the work of <a href="https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf">Caruana et al., 2006</a>.</p>
+</div>
+<hr>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://github.com/anshu92/blog/raw/gh-pages/images/distill4.png" alt="Matching logits">
+</div>
+<div class="title">Figure 5. Matching logits as a special case of distillation</div>
+</div>
+<hr>
+<div class="paragraph">
+<p>If your student model appears to be too small to learn the knowledge of a larger model, it is better to set a lower temperature because you would rather learn the harder targets before you learn the darker information captured by softer targets at higher temperatures.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_regularizing_specialists">Regularizing specialists</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The problem with highly specialized models is that they tend to be very over fitted to the training dataset. Our goal hence is to regularize this model without losing their effectiveness on the specialized domain. Often we freeze the first few layers of a specialist model while transferring it to a slightly different dataset. This doesnt always work well because the first few filters of the network might need to be slightly adapted to the new dataset. The solution might be instead to use a mixture of specialists and subsequently distill their knowledge into a smaller efficient model.</p>
 </div>
 </div>
 </div>]]></description><link>https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</guid><category><![CDATA[distillation]]></category><category><![CDATA[machine learning]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Tue, 10 Sep 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
