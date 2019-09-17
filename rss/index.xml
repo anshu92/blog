@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 00:43:33 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div class="paragraph lead">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 01:08:01 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div class="paragraph lead">
 <p><strong>How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.</strong></p>
 </div>
 <div class="imageblock">
@@ -68,6 +68,13 @@
 <div class="title">Figure 3. Softmax Function with Temperature</div>
 </div>
 <hr>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://github.com/anshu92/blog/raw/gh-pages/images/distill3.png" alt="Targets">
+</div>
+<div class="title">Figure 4. hard vs soft targets</div>
+</div>
+<hr>
 <div class="paragraph">
 <p><a href="https://arxiv.org/pdf/1503.02531.pdf">Hinton et al., 2015</a> introduced the concept of <strong>"softmax temperature"</strong>. The probability p<sub>i</sub> of class i is calculated from the logits z. T is the temperature parameter - as you can see, setting T = 1 gives us the standard softmax function. In the paper, they also found that if the ground truth labels are available, it improves the model if the loss to optimize includes training on ground truth labels in addition to the soft target outputs of the teacher model(as shown in the figure, student loss is added to distillation loss).</p>
 </div>
@@ -88,6 +95,9 @@ less data than the original cumbersome model and using a much higher learning ra
 &#8212; Hinton et al.<br>
 <cite>2015</cite>
 </div>
+</div>
+<div class="paragraph">
+<p>As you can see in Fig 3., whereas hard targets encode the label of the correct class, soft targets encode a lot more knowledge. For instance, the fact that a cow is 1000 times closer to a dog than a car.</p>
 </div>]]></description><link>https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</guid><category><![CDATA[distillation]]></category><category><![CDATA[machine learning]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Tue, 10 Sep 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
 <p><strong><em>helpful links:</em></strong></p>
 </div>
