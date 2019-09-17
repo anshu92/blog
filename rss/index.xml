@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 01:23:45 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 02:05:21 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
 <p><strong>How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.</strong></p>
@@ -51,31 +51,21 @@
 <h2 id="_can_we_mine_the_knowledge_in_a_training_set_by_collecting_a_pile_of_dirt_before_filtering_it_for_gold_nuggets_i_e_can_we_transfer_knowledge_learnt_by_an_ensemble_of_models_into_a_single_efficient_one">Can we mine the knowledge in a training set by collecting a pile of dirt before filtering it for gold nuggets, i.e, can we transfer knowledge learnt by an ensemble of models into a single efficient one?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="https://arxiv.org/pdf/1503.02531.pdf">Hinton et al., 2015</a> introduced the concept of <strong>"softmax temperature"</strong>(Fig1). The probability p<sub>i</sub> of class i is calculated from the logits z. T is the temperature parameter - as you can see, setting T = 1 gives us the standard softmax function. In the paper, they also found that if the ground truth labels are available, it improves the model if the loss to optimize includes training on ground truth labels in addition to the soft target outputs of the teacher model(as shown in the figure, student loss is added to distillation loss).</p>
+<p>In order to present the plausability of delinking knowledge with the learned  model parameters, an analogy involving insects can be used. That is, the case where some insects in nature that optimize based on their stage-of-life requirement - larval forms to extract nutrition from environment and an adult form for travelling and reproduction. On the other hand - cumbersome, large and often ensemble models remain the same during training and deployment. Another assumption made is that the optimizing an objective function for the training set is close to optimizing the user&#8217;s true objective - <em>generalizing well to unseen data.</em></p>
 </div>
 <hr>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="https://github.com/anshu92/blog/raw/gh-pages/images/tempsoftmax.png" alt="Model Distillation">
-</div>
-<div class="title">Figure 1. Softmax Function with Temperature</div>
-</div>
-<hr>
-<div class="paragraph">
-<p>On a philosophical line of thought, the paper presents an analogy of some insects in nature that optimize based on their stage-of-life requirement - larval forms to extract nutrition from environment and an adult form for travelling and reproduction; whereas cumbersome, large and often ensemble models remain the same during training and deployment. A conceptual block that may explain our hesitation of modifying trained models is our assumption that changing learned parameters may lead to loss of knowledge. Another assumption made is that the optimizing an objective function for the training set is close to optimizing the user&#8217;s true objective - <em>generalizing well to unseen data.</em></p>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="https://github.com/anshu92/blog/raw/gh-pages/images/distill1.png" alt="Analogy">
 </div>
-<div class="title">Figure 2. Analogy. graphic by Anshuman Sahoo</div>
+<div class="title">Figure 1. Analogy. graphic by Anshuman Sahoo</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
 <img src="https://github.com/anshu92/blog/raw/gh-pages/images/distill.png" alt="Model Distillation">
 </div>
-<div class="title">Figure 3. Model Distillation. graphic by Anshuman Sahoo</div>
+<div class="title">Figure 2. Model Distillation. graphic by Anshuman Sahoo</div>
 </div>
 <hr>
 </div>
@@ -83,6 +73,16 @@
 <div class="sect1">
 <h2 id="_hard_vs_soft_targets">Hard vs. Soft Targets</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://arxiv.org/pdf/1503.02531.pdf">Hinton et al., 2015</a> introduced the concept of <strong>"softmax temperature"</strong>(Fig1). The probability p<sub>i</sub> of class i is calculated from the logits z. T is the temperature parameter - as you can see, setting T = 1 gives us the standard softmax function. In the paper, they also found that if the ground truth labels are available, it improves the model if the loss to optimize includes training on ground truth labels in addition to the soft target outputs of the teacher model(as shown in the figure, student loss is added to distillation loss).</p>
+</div>
+<hr>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://github.com/anshu92/blog/raw/gh-pages/images/tempsoftmax.png" alt="Model Distillation">
+</div>
+<div class="title">Figure 3. Softmax Function with Temperature</div>
+</div>
 <div class="quoteblock">
 <blockquote>
 <div class="paragraph">
@@ -104,6 +104,12 @@ less data than the original cumbersome model and using a much higher learning ra
 <hr>
 <div class="paragraph">
 <p>As you can see in Fig 3., whereas hard targets encode the label of the correct class, soft targets encode a lot more knowledge. For instance, the fact that a cow is 1000 times closer to a dog than a car is captured by the high temperature softmax output of the ensemble.</p>
+</div>
+<div class="paragraph">
+<p>In experiments involving MNIST, a smaller model of fully connected layers 784x800x800x10 produces 146 test errors. A larger model of fully connected layers 784x1200x1200x10 when trained using dropout, weight constraints and input jitter achieves 67 test errors. When the smaller model is trained on the soft output of the larger model, it achieves an error score of 74 errors. It achieves this without the need for the regularizing steps like dropout, jitter etc. This shows almost all the "dark" knowledge that helps the larger model generalize is successfully passed on to the smaller model. For instance, the larger model learns a similarity metric for the digit classes which helps the smaller model distinguish between them much easier.</p>
+</div>
+<div class="paragraph">
+<p>Another surprising result from MNIST is that if one class, say 3, is left out of the training set, and the smaller model is trained on the outputs of the larger. If we then adjust the bias of class 3 (this is needed because the smaller model has never seen 3, and assumes it to be improbable), we can actually get 98.6% of the test cases for 3 by the knowledge we learn about it from the other classes. In a similar way, if we only train on 7s and 8s, and lower their biases appropriately, the smaller model achieves 87% across all 10 classes!</p>
 </div>
 </div>
 </div>]]></description><link>https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</guid><category><![CDATA[distillation]]></category><category><![CDATA[machine learning]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Tue, 10 Sep 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
