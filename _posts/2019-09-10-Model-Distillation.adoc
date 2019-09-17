@@ -38,12 +38,12 @@ Most machine learning competitions are won by ensemble of models that each under
 In order to present the plausability of delinking knowledge from the learned  model parameters, an analogy involving insects can be used - the case where some insects in nature that optimize based on their stage-of-life requirement; larval forms to extract nutrition from environment and an adult form for travelling and reproduction. Contrastingly - cumbersome, large and often ensemble models remain the same during training and deployment. As shown in Fig 1., it should be possible to use larger, more diverse models to learn from training data and collapse that information into a more efficient, smaller model. Another assumption made is that the optimizing an objective function for the training set is close to optimizing the user's true objective - _generalizing well to unseen data._ This is not generally the case in modern datasets where the captured data variance is often very different from unseen samples.
 
 '''
-.Analogy. graphic by Anshuman Sahoo
+.Analogy.
 image::https://github.com/anshu92/blog/raw/gh-pages/images/distill1.png[Analogy]
 
 '''
 
-.Model Distillation. graphic by Anshuman Sahoo
+.Model Distillation.
 image::https://github.com/anshu92/blog/raw/gh-pages/images/distill.png[Model Distillation]
 
 '''
