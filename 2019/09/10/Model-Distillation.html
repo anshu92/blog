@@ -25,7 +25,7 @@
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
-    <link rel="stylesheet" type="text/css" href="//anshu92.github.io/blog/themes/uno/assets/css/uno.css?v=1568690661446" />
+    <link rel="stylesheet" type="text/css" href="//anshu92.github.io/blog/themes/uno/assets/css/uno.css?v=1568691474687" />
 
     <link rel="canonical" href="https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html" />
     <meta name="referrer" content="origin" />
@@ -298,7 +298,7 @@ less data than the original cumbersome model and using a much higher learning ra
 <h2 id="_regularizing_specialists">Regularizing specialists</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The problem with highly specialized models is that they tend to be very over fitted to the training dataset. Our goal hence is to regularize this model without losing their effectiveness on the specialized domain. Often we freeze the first few layers of a specialist model while transferring it to a slightly different dataset. This doesnt always work well because the first few filters of the network might need to be slightly adapted to the new dataset. The solution might be instead to use a mixture of specialists and subsequently distill their knowledge into a smaller efficient model, or using tricks like this:</p>
+<p>The problem with highly specialized models is that they tend to be very over fitted to the training dataset. Our goal hence is to regularize this model without losing their effectiveness on the specialized domain. Often we freeze the first few layers of a large model while transferring it to a slightly different dataset. This doesnt always work well because the first few filters of the network might need to be slightly adapted to the new dataset. The solution might be instead to use a mixture of specialists and subsequently distill their knowledge into a smaller efficient model, or using tricks like this:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -369,7 +369,7 @@ less data than the original cumbersome model and using a much higher learning ra
         // hljs.initHighlightingOnLoad();
       </script>
 
-    <script type="text/javascript" src="//anshu92.github.io/blog/themes/uno/assets/js/main.js?v=1568690661446"></script>
+    <script type="text/javascript" src="//anshu92.github.io/blog/themes/uno/assets/js/main.js?v=1568691474687"></script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
