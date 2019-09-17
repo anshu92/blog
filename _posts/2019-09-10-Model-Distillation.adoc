@@ -103,3 +103,5 @@ Distilling the Knowledge in a Neural Network by Geoffrey Hinton, Oriol Vinyals a
 
 https://www.youtube.com/watch?v=EK61htlw8hY[Video lecture] by Hinton
 
+Distilling BERT Models with spaCy by Yves Peirsman, 2019. http://www.nlp.town/blog/distilling-bert/[link]
+
