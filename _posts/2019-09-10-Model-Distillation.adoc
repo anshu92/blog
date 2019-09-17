@@ -50,7 +50,7 @@ image::https://github.com/anshu92/blog/raw/gh-pages/images/distill.png[Model Dis
 
 ## Hard vs. Soft Targets
 
-https://arxiv.org/pdf/1503.02531.pdf[Hinton et al., 2015] introduced the concept of *"softmax temperature"*(Fig1). The probability p~i~ of class i is calculated from the logits z. T is the temperature parameter - as you can see, setting T = 1 gives us the standard softmax function. In the paper, they also found that if the ground truth labels are available, it improves the model if the loss to optimize includes training on ground truth labels in addition to the soft target outputs of the teacher model(as shown in the figure, student loss is added to distillation loss).
+https://arxiv.org/pdf/1503.02531.pdf[Hinton et al., 2015] introduced the concept of *"softmax temperature"*(Fig 3). The probability p~i~ of class i is calculated from the logits z. T is the temperature parameter - as you can see, setting T = 1 gives us the standard softmax function. In the paper, they also found that if the ground truth labels are available, it improves the model if the loss to optimize includes training on ground truth labels in addition to the soft target outputs of the teacher model(as shown in the figure, student loss is added to distillation loss).
 
 '''
 .Softmax Function with Temperature
