@@ -68,6 +68,6 @@ image::https://github.com/anshu92/blog/raw/gh-pages/images/distill3.png[Targets,
 
 '''
 
-As you can see in Fig 3., whereas hard targets encode the label of the correct class, soft targets encode a lot more knowledge. For instance, the fact that a cow is 1000 times closer to a dog than a car.
+As you can see in Fig 3., whereas hard targets encode the label of the correct class, soft targets encode a lot more knowledge. For instance, the fact that a cow is 1000 times closer to a dog than a car is captured by the high temperature softmax output of the ensemble.
 
 
