@@ -36,6 +36,8 @@ Most machine learning competitions are won by ensemble of models that each under
 .Analogy. graphic by Anshuman Sahoo
 image::https://github.com/anshu92/blog/raw/gh-pages/images/distill1.png[Analogy]
 
+'''
+
 .Model Distillation. graphic by Anshuman Sahoo
 image::https://github.com/anshu92/blog/raw/gh-pages/images/distill.png[Model Distillation]
 
