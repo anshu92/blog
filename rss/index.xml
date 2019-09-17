@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 02:51:26 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 02:55:39 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
 <p><strong>How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.</strong></p>
@@ -148,6 +148,20 @@ less data than the original cumbersome model and using a much higher learning ra
 </div>
 <div class="paragraph">
 <p>Note: When combining specialist models, each with its own dustbin class, the model is not making a claim about the fact that all dustbin classes are equally probable but about the sum of probabilities of all dustbin classes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Model Compression by Cristian Bucila, Rich Caruana, and Alexandru Niculescu-Mizil, 2006. <a href="https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf">link</a></p>
+</div>
+<div class="paragraph">
+<p>Distilling the Knowledge in a Neural Network by Geoffrey Hinton, Oriol Vinyals and Jeff Dean, 2015. <a href="https://arxiv.org/pdf/1503.02531.pdf">link</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.youtube.com/watch?v=EK61htlw8hY">Video lecture</a> by Hinton</p>
 </div>
 </div>
 </div>]]></description><link>https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</guid><category><![CDATA[distillation]]></category><category><![CDATA[machine learning]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Tue, 10 Sep 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
