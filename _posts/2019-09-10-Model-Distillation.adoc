@@ -67,7 +67,7 @@ image::https://github.com/anshu92/blog/raw/gh-pages/images/distill3.png[Targets,
 
 '''
 
-As you can see in Fig 3., whereas hard targets encode the label of the correct class, soft targets encode a lot more knowledge. For instance, the fact that a cow is 1000 times closer to a dog than a car is captured by the high temperature softmax output of the ensemble.
+As you can see in Fig 4., whereas hard targets encode the label of the correct class, soft targets encode a lot more knowledge. For instance, the fact that a cow is 1000 times closer to a dog than a car is captured by the high temperature softmax output of the ensemble.
 
 
 In experiments involving MNIST, a smaller model of fully connected layers 784x800x800x10 produces 146 test errors. A larger model of fully connected layers 784x1200x1200x10 when trained using dropout, weight constraints and input jitter achieves 67 test errors. When the smaller model is trained on the soft output of the larger model, it achieves an error score of 74 errors. It achieves this without the need for the regularizing steps like dropout, jitter etc. This shows almost all the "dark" knowledge that helps the larger model generalize is successfully passed on to the smaller model. For instance, the larger model learns a similarity metric for the digit classes which helps the smaller model distinguish between them much easier.
