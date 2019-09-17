@@ -93,3 +93,13 @@ The problem with highly specialized models is that they tend to be very over fit
 3. Initialize with the specialist model with weights of a previously trained generalist model, use early stopping to prevent overfitting. Train on specialist classes.
 
 Note: When combining specialist models, each with its own dustbin class, the model is not making a claim about the fact that all dustbin classes are equally probable but about the sum of probabilities of all dustbin classes.
+
+
+## References
+
+Model Compression by Cristian Bucila, Rich Caruana, and Alexandru Niculescu-Mizil, 2006. https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf[link]
+
+Distilling the Knowledge in a Neural Network by Geoffrey Hinton, Oriol Vinyals and Jeff Dean, 2015. https://arxiv.org/pdf/1503.02531.pdf[link]
+
+https://www.youtube.com/watch?v=EK61htlw8hY[Video lecture] by Hinton
+
