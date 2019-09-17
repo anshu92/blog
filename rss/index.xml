@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 02:25:04 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 02:44:06 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
 <p><strong>How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.</strong></p>
@@ -131,7 +131,23 @@ less data than the original cumbersome model and using a much higher learning ra
 <h2 id="_regularizing_specialists">Regularizing specialists</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The problem with highly specialized models is that they tend to be very over fitted to the training dataset. Our goal hence is to regularize this model without losing their effectiveness on the specialized domain. Often we freeze the first few layers of a specialist model while transferring it to a slightly different dataset. This doesnt always work well because the first few filters of the network might need to be slightly adapted to the new dataset. The solution might be instead to use a mixture of specialists and subsequently distill their knowledge into a smaller efficient model.</p>
+<p>The problem with highly specialized models is that they tend to be very over fitted to the training dataset. Our goal hence is to regularize this model without losing their effectiveness on the specialized domain. Often we freeze the first few layers of a specialist model while transferring it to a slightly different dataset. This doesnt always work well because the first few filters of the network might need to be slightly adapted to the new dataset. The solution might be instead to use a mixture of specialists and subsequently distill their knowledge into a smaller efficient model, or using tricks like this:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Train specialist models on a subset of classes and keep one dustbin class for all the classes it doesn&#8217;t specialize in. The specialist should learn two things - a) is this sample in my specialized subset? b) the relative probabilities of all the classes in the subset.</p>
+</li>
+<li>
+<p>After training, allow adjustment of the dustbin class logit to account for data enrichment. Ex. if 50% of samples are in the dustbin class in the training data while in real world they are 99%, we can adjust the logits with an additional log(50) or so to account for this.</p>
+</li>
+<li>
+<p>Initialize with the specialist model with weights of a previously trained generalist model, use early stopping to prevent overfitting. Train on specialist classes.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Note: When combining specialist models, each with its own dustbin class, the model is not making a claim about the fact that all dustbin classes are equally probable but about the sum of probabilities of all dustbin classes.</p>
 </div>
 </div>
 </div>]]></description><link>https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/09/10/Model-Distillation.html</guid><category><![CDATA[distillation]]></category><category><![CDATA[machine learning]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Tue, 10 Sep 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Variable Elimination Algorithm in Probabilistic Graph Inference]]></title><description><![CDATA[<div class="paragraph">
