@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 03:37:54 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hallucinations]]></title><description><![CDATA[by anshuman sahoo]]></description><link>https://anshu92.github.io/blog</link><image><url>/blog/images/cover/cover.jpg</url><title>hallucinations</title><link>https://anshu92.github.io/blog</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 26 Nov 2019 05:56:10 GMT</lastBuildDate><atom:link href="https://anshu92.github.io/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[The Bluster : A Short Story]]></title><description><![CDATA[<div class="paragraph">
+<p>“Don’t forget the hat with the straps, it is blustery out there!”, she said, sitting theatrically on her hands to keep them warm.
+“Ushanka”, he muttered, his mind caught by the color coded hurdles of meetings and tasks that lay ahead - his thumbs twitching across the recessed ‘Done’ button on his calendar app.
+“What?”
+“That’s what the hat is called - an ushanka, it’s Russian I think.”, he said as he made ran through the checklist of things in his pockets and checking if he left the bathroom light on.</p>
+</div>
+<div class="paragraph">
+<p>Satisfied, he stepped into what was seemingly a clear day devoid of snow that had plagued the city for a week and a half. As he stepped out from his doorstep and under the overpass next to his house, he popped in his earphones and pressed play on a news podcast so that he had something to discuss once he reached the office. Being a man of immense preparation, he expected the cold and wind to hit as he left the shelter of the overpass, and so he braced himself. And indeed, the wind had, in an entropic conspiracy of many scales, profiligated its destructive potential in blowing away the ushanka as soon as it touched it. This led to a hapless reaction and immediate realization that any attempt to recover the hat was futile as it sailed across and around my building.</p>
+</div>
+<div class="paragraph">
+<p>Defeated, he trudged back homeward into the lobby of his building to find a familiar face in intense argument with an elderly woman.</p>
+</div>
+<div class="paragraph">
+<p>“The package clearly said 702! I am a biologist and these antibodies are now useless! Did the multiple layers of plastic protection and this conspicuous symbol not alarm you?”, she shrieked.</p>
+</div>
+<div class="paragraph">
+<p>The elderly woman lulled into an explanation that her medications have a similar symbol, and she wondered if they were refills.</p>
+</div>
+<div class="paragraph">
+<p>As he made eye contact while passing the duo, he maintained a speed that would allow him to escape getting involved. The voices died down as he reached the elevators, which opened to the frightening growls of a dog that can only be described as carnivorous. And as the elevator provided a brief period of respite until it reopened on another floor, this was soon replaced by the cacophony of two dogs disposing all pretense of civility their owners transmitted through their training.</p>
+</div>
+<div class="paragraph">
+<p>Finally he reached his floor and walked toward his door. He knew she slept in after he left, her work hours being of a more seasonal nature. So he used his spare key, and entered to find the sheets on his bed in turbulence and more limbs than he had hoped to see. Then he looked out through a window; and there, pushed against the glass was the hat. He opened the window and grabbed it. As he put it on, the buzz of the first meeting starting made his mind up. He stepped out once again, into the bluster.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Anshuman</p>
+</li>
+</ul>
+</div>]]></description><link>https://anshu92.github.io/blog/2019/11/26/The-Bluster-A-Short-Story.html</link><guid isPermaLink="true">https://anshu92.github.io/blog/2019/11/26/The-Bluster-A-Short-Story.html</guid><category><![CDATA[Short Story]]></category><category><![CDATA[Blog]]></category><dc:creator><![CDATA[Anshuman Sahoo]]></dc:creator><pubDate>Tue, 26 Nov 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Model Distillation]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
 <p><strong>How most of the information in large models can be transferred to a small model using soft targets, and what that says about the relationship of information to the dynamics of learning.</strong></p>
